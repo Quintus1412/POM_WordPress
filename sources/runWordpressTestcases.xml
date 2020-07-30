@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="com.wordpress.login.Login_01_ValidateLogInForm"/>
+      <class name="com.wordpress.media.Media_01_ViewMedia"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

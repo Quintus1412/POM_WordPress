@@ -1,18 +1,16 @@
 package com.wordpress.login;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class Login_01_ValidateLogInForm {
 
@@ -22,16 +20,14 @@ public class Login_01_ValidateLogInForm {
 	By loginButtonBy = By.xpath("//button[@class='button form-button is-primary']");
 	By errorMessageBy = By.xpath("//div[@class='form-input-validation is-error']/span");
 	By errorMessagePasswordBy = By.xpath("//div[@class='form-input-validation is-error']/span");
-	
-	
 
 	@BeforeClass
 	public void beforeClass() {
-//		System.setProperty("webdriver.gecko.driver", ".\\drivers\\geckodriver.exe");
-//		driver = new FirefoxDriver();
-		
-		 System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
-				 driver = new ChromeDriver();
+		// System.setProperty("webdriver.gecko.driver", ".\\drivers\\geckodriver.exe");
+		// driver = new FirefoxDriver();
+
+		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 
@@ -57,7 +53,7 @@ public class Login_01_ValidateLogInForm {
 
 	@Test
 	public void TC_03_EmailNotExisted() {
-		driver.findElement(emailTextboxBy).sendKeys("automation"+randomNumber()+"@gmail.com");
+		driver.findElement(emailTextboxBy).sendKeys("automation" + randomNumber() + "@gmail.com");
 		driver.findElement(loginButtonBy).click();
 		Assert.assertEquals(driver.findElement(errorMessageBy).getText().trim(), "User does not exist. Would you like to create a new account?");
 	}
@@ -98,9 +94,7 @@ public class Login_01_ValidateLogInForm {
 		Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Dashboard')]")).isDisplayed());
 		Assert.assertTrue(driver.findElement(By.xpath("//div[@id='dashboard-widgets']")).isDisplayed());
 	}
-	
-	
-	
+
 	public int randomNumber() {
 		Random number = new Random(9999);
 		return number.nextInt();

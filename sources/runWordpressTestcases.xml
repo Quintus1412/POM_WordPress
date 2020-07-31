@@ -2,8 +2,8 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="com.wordpress.login.Login_01_ValidateLogInForm"/>
-      <class name="com.wordpress.media.Media_01_ViewMedia"/>
+      <class name="com.wordpress.login.Login_02_Apply_AbstractPage_Init"/>
+      <class name="com.wordpress.login.Login_03_Apply_AbstractPage_Extend"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

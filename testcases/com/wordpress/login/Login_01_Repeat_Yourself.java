@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Login_01_ValidateLogInForm {
+public class Login_01_Repeat_Yourself {
 
 	WebDriver driver;
 	By emailTextboxBy = By.xpath("//input[@id='usernameOrEmail']");

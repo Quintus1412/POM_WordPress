@@ -1,4 +1,4 @@
-package pageUI;
+package pageUI.wordpress;
 
 public class DashBoardPageUI {
 

@@ -1,9 +1,9 @@
-package pageObjects;
+package pageObjects.wordpress;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
-import pageUI.LogInPageUI;
+import pageUI.wordpress.LogInPageUI;
 
 public class LogInPageObject extends AbstractPage {
 	WebDriver driver;
@@ -36,4 +36,7 @@ public class LogInPageObject extends AbstractPage {
 
 	}
 
+
+
+	
 }

@@ -3,6 +3,7 @@ package pageOjects.bankGuru;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import commons.PageGeneratorManager_BankGuRu;
 import pageUI.bankGuru.LogInPageUI;
 
 public class LogInPageObject extends AbstractPage {
@@ -17,10 +18,10 @@ public class LogInPageObject extends AbstractPage {
 		return getCurrentUrl(driver);
 	}
 
-	public void clickToHereLink() {
+	public RegisterPageObject clickToHereLink() {
 		waitForElementClickable(driver, LogInPageUI.HERE_LINK);
 		clickToElement(driver, LogInPageUI.HERE_LINK);
-
+		return PageGeneratorManager_BankGuRu.getRegisterPage(driver);
 	}
 
 	public void inputToUserIDTextbox(String userIDValue) {
@@ -34,9 +35,10 @@ public class LogInPageObject extends AbstractPage {
 
 	}
 
-	public void clickToLoginButton() {
+	public HomePageObject clickToLoginButton() {
 		waitForElementClickable(driver, LogInPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LogInPageUI.LOGIN_BUTTON);
+		return PageGeneratorManager_BankGuRu.getHomePage(driver);
 	}
 
 }

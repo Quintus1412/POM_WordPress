@@ -25,7 +25,7 @@ public abstract class AbstractPage {
 		driver.get(url);
 	}
 
-	public String getPageTile(WebDriver driver) {
+	public String getPageTitle(WebDriver driver) {
 		return driver.getTitle();
 	}
 
@@ -50,7 +50,7 @@ public abstract class AbstractPage {
 
 	}
 
-	public void canceltAlert(WebDriver driver) {
+	public void cancelAlert(WebDriver driver) {
 		driver.switchTo().alert().dismiss();
 
 	}

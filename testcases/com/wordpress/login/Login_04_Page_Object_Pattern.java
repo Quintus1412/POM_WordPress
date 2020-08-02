@@ -32,7 +32,7 @@ public class Login_04_Page_Object_Pattern extends AbstractPage {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://automationfc.wordpress.com/wp-admin/");
-
+		
 		loginPage = new LogInPageObject(driver);
 	}
 
@@ -100,9 +100,7 @@ public class Login_04_Page_Object_Pattern extends AbstractPage {
 		loginPage.inputToEmailTextbox("automationeditor");
 		loginPage.clickToContinueOrLoginButton();
 		loginPage.inputToPasswordTextBox("automationfc");
-		loginPage.clickToContinueOrLoginButton();
-		dashboardPage = new DashBoardPageObject(driver);
-
+		dashboardPage =loginPage.clickToContinueOrLoginButton();
 		Assert.assertTrue(dashboardPage.isHeaderTextDisplayed());
 	}
 

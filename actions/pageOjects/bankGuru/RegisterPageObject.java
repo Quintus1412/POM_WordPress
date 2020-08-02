@@ -3,6 +3,7 @@ package pageOjects.bankGuru;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import commons.PageGeneratorManager_BankGuRu;
 import pageUI.bankGuru.RegisterPageUI;
 
 public class RegisterPageObject extends AbstractPage {
@@ -37,9 +38,13 @@ WebDriver driver;
 		return getElementtext(driver, RegisterPageUI.USERPASS_TEXT);
 	}
 
-	public void openLoginPage(String loginPageURL) {
+	public LogInPageObject openLoginPage(String loginPageURL) {
 		openURL(driver, loginPageURL);
+		return PageGeneratorManager_BankGuRu.getLoginPage(driver);
+
+		
 		
 	}
 
 }
+

@@ -15,6 +15,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.server.handler.GetAlertText;
+import org.openqa.selenium.remote.server.handler.GetCurrentUrl;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
@@ -44,19 +46,15 @@ public class Login_01_RegisterAndLogin {
 	@Test
 	public void TC_01_Register() {
 		// Click here link -> Open Register page
-		loginPage.clickToHereLink();
-		// Event navigate to Register Page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = loginPage.clickToHereLink();
 		registerPage.inputToEmailTextbox("quintus"+randomNumber()+"@gmail.com");
 		registerPage.clickToSubmitButton();
 		userIDValue = registerPage.getUserIDText();
 		passwordValue = registerPage.getPasswordText();
 
 		// From Register page-> open Login page
-		registerPage.openLoginPage(loginPageURL);
-
-		// Init Login page
-		loginPage = new LogInPageObject(driver);
+		loginPage = registerPage.openLoginPage(loginPageURL);
+		
 
 	}
 
@@ -64,16 +62,15 @@ public class Login_01_RegisterAndLogin {
 	public void TC_02_Login() {
 		loginPage.inputToUserIDTextbox(userIDValue);
 		loginPage.inputToPasswordTextbox(passwordValue);
-		loginPage.clickToLoginButton();
-		// Init Home Page
-		homePage = new HomePageObject(driver);
+		homePage = loginPage.clickToLoginButton();
 		Assert.assertTrue(homePage.isWelcomeMessageDisplayed());
-		
-	
 	}
 
 	@Test
-	public void f() {
+	public void TC_03_LogOut() {
+		homePage.logOutHomePage();
+		//Assert.assertEquals("You Have Succesfully Logged Out!!", (driver));
+		//Assert.assertEquals(driver.getCurrentUrl(), "http://demo.guru99.com/V4/");
 	}
 
 	public int randomNumber() {

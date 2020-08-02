@@ -19,9 +19,11 @@ public class LogInPageObject extends AbstractPage {
 
 	}
 
-	public void clickToContinueOrLoginButton() {
+	public DashBoardPageObject clickToContinueOrLoginButton() {
 		waitForElementVisible(driver, LogInPageUI.CONTINUE_OR_LOGIN_BUTTON);
 		clickToElement(driver, LogInPageUI.CONTINUE_OR_LOGIN_BUTTON);
+		return new DashBoardPageObject(driver);
+		
 
 	}
 

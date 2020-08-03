@@ -6,7 +6,7 @@ import commons.AbstractPage;
 import commons.PageGeneratorManager_BankGuRu;
 import pageUI.bankGuru.HomePageUI;
 
-public class HomePageObject extends AbstractPage{
+public  class HomePageObject extends AbstractPage{
 	WebDriver driver;
 	
 	public HomePageObject (WebDriver mapDriver) {
@@ -21,9 +21,13 @@ public class HomePageObject extends AbstractPage{
 	public void logOutHomePage() {
 		waitForElementVisible(driver, HomePageUI.LOG_OUT_LINK);
 		clickToElement(driver, HomePageUI.LOG_OUT_LINK);
-		//getTextAlert(driver);
-		//return PageGeneratorManager_BankGuRu.getLoginPage(driver);
+	
 		
 		
 	}
+
+	
+
+
+	
 }

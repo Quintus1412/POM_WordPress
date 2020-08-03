@@ -18,13 +18,27 @@ import org.testng.annotations.ExpectedExceptions;
 import com.sun.org.apache.bcel.internal.classfile.ParameterAnnotationEntry;
 
 import jdk.nashorn.internal.runtime.GlobalConstants;
+import pageObjects.wordpress.DashBoardPageObject;
+import pageObjects.wordpress.MediaPageObject;
+import pageObjects.wordpress.PagesPageObject;
+import pageObjects.wordpress.PostsPageObject;
+import pageUI.wordpress.AbstractPageUI;
+import pageUI.wordpress.DashBoardPageUI;
+import pageUI.wordpress.MediaPageUI;
+import pageUI.wordpress.PagesPageUI;
+import pageUI.wordpress.PostPageUI;
 
 public abstract class AbstractPage {
 
 	public void openURL(WebDriver driver, String url) {
 		driver.get(url);
 	}
-
+ public boolean isPageLoaded(WebDriver driver, String url) {
+	 String actualUrl = driver.getCurrentUrl();
+	 return actualUrl.equals(url);
+	 
+ }
+ 
 	public String getPageTitle(WebDriver driver) {
 		return driver.getTitle();
 	}
@@ -323,7 +337,30 @@ public abstract class AbstractPage {
 		explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(locator)));
 	}
+// common Funtion -> Open Page
+	public PostsPageObject clickToPostsMenu(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI.POSTS_LINK);
+		clickToElement(driver, AbstractPageUI.POSTS_LINK);
+		return PageGeneratorManager_WordPress.getPostsPage(driver);
+	}
+	public PagesPageObject clickToPagesMenu(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI.PAGES_LINK);
+		clickToElement(driver, AbstractPageUI.PAGES_LINK);
+		return PageGeneratorManager_WordPress.getPagesPage(driver);
+	}
+	public MediaPageObject clickToMediaMenu(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI.MEDIA_LINK);
+		clickToElement(driver, AbstractPageUI.MEDIA_LINK);
+		return PageGeneratorManager_WordPress.getMediaPage(driver);
+	}
+	public DashBoardPageObject clickToDashboardMenu(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI.DASHBOARD_LINK);
+		clickToElement(driver, AbstractPageUI.DASHBOARD_LINK);
+		return PageGeneratorManager_WordPress.getDashBoardPage(driver);
+	}
 
+	
+	
 	private Select select;
 	private Actions action;
 	private WebElement element;

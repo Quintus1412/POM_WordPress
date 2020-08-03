@@ -14,7 +14,7 @@ WebDriver driver;
 		driver = mapDriver;
 		System.out.print("Driver at register page"+ driver.toString());
 	}
-
+	
 	public void inputToEmailTextbox(String email) {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_TEXTBOX);
 		senkeyToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, email);

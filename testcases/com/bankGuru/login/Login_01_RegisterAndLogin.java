@@ -1,24 +1,20 @@
 package com.bankGuru.login;
 
+import java.util.Random;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-
+import Browsers_Factory.BrowserDriverFactory;
+import Browsers_Factory.DriverManager;
+import commons.PageGeneratorManager_BankGuRu;
 import pageOjects.bankGuru.HomePageObject;
 import pageOjects.bankGuru.LogInPageObject;
 import pageOjects.bankGuru.RegisterPageObject;
-
-import org.testng.annotations.BeforeClass;
-
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.server.handler.GetAlertText;
-import org.openqa.selenium.remote.server.handler.GetCurrentUrl;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 
 public class Login_01_RegisterAndLogin {
 
@@ -26,27 +22,32 @@ public class Login_01_RegisterAndLogin {
 	LogInPageObject loginPage;
 	RegisterPageObject registerPage;
 	HomePageObject homePage;
+	DriverManager driverManager;
 
 	String userIDValue;
 	String passwordValue;
 	String loginPageURL;
-
+	
+	@Parameters({ "browser" })
+	
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+	public void beforeClass(String browserName) {
+		driverManager = BrowserDriverFactory.getDriverManager(browserName);
+		driver = driverManager.getDriver();
 		// Open LogIn page. Init Login page
-		driver.get("http://demo.guru99.com/V4/");
-		loginPage = new LogInPageObject(driver);
+		//driver.get("http://demo.guru99.com/V4/");
+		//loginPage = new LogInPageObject(driver);
+		
+		loginPage = PageGeneratorManager_BankGuRu.getLoginPage(driver);
 		loginPageURL = loginPage.getLoginPageURL();
+		
 	}
 
 	@Test
 	public void TC_01_Register() {
 		// Click here link -> Open Register page
-		registerPage = loginPage.clickToHereLink();
+		registerPage = loginPage.clickToHereLink();	
+		
 		registerPage.inputToEmailTextbox("quintus"+randomNumber()+"@gmail.com");
 		registerPage.clickToSubmitButton();
 		userIDValue = registerPage.getUserIDText();
@@ -54,6 +55,7 @@ public class Login_01_RegisterAndLogin {
 
 		// From Register page-> open Login page
 		loginPage = registerPage.openLoginPage(loginPageURL);
+		
 		
 
 	}
@@ -63,12 +65,15 @@ public class Login_01_RegisterAndLogin {
 		loginPage.inputToUserIDTextbox(userIDValue);
 		loginPage.inputToPasswordTextbox(passwordValue);
 		homePage = loginPage.clickToLoginButton();
+		
 		Assert.assertTrue(homePage.isWelcomeMessageDisplayed());
+	
 	}
 
 	@Test
 	public void TC_03_LogOut() {
 		homePage.logOutHomePage();
+		
 		//Assert.assertEquals("You Have Succesfully Logged Out!!", (driver));
 		//Assert.assertEquals(driver.getCurrentUrl(), "http://demo.guru99.com/V4/");
 	}

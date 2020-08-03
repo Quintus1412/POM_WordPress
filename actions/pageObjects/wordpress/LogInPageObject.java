@@ -3,6 +3,7 @@ package pageObjects.wordpress;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
+import commons.PageGeneratorManager_WordPress;
 import pageUI.wordpress.LogInPageUI;
 
 public class LogInPageObject extends AbstractPage {
@@ -22,7 +23,7 @@ public class LogInPageObject extends AbstractPage {
 	public DashBoardPageObject clickToContinueOrLoginButton() {
 		waitForElementVisible(driver, LogInPageUI.CONTINUE_OR_LOGIN_BUTTON);
 		clickToElement(driver, LogInPageUI.CONTINUE_OR_LOGIN_BUTTON);
-		return new DashBoardPageObject(driver);
+		return PageGeneratorManager_WordPress.getDashBoardPage(driver);
 		
 
 	}
@@ -36,6 +37,16 @@ public class LogInPageObject extends AbstractPage {
 		waitForElementVisible(driver, LogInPageUI.PASSWORD_TEXTBOX);
 		senkeyToElement(driver, LogInPageUI.PASSWORD_TEXTBOX, password);
 
+	}
+
+	public void openLoginPage(String loginPageUrl) {
+		openURL(driver, loginPageUrl);
+		
+	}
+
+	public String getLoginPageUrl() {
+		// TODO Auto-generated method stub
+		return getCurrentUrl(driver);
 	}
 
 

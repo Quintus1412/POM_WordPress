@@ -41,4 +41,5 @@ public class LogInPageObject extends AbstractPage {
 		return PageGeneratorManager_BankGuRu.getHomePage(driver);
 	}
 
+
 }

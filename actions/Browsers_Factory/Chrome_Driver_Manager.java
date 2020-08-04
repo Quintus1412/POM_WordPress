@@ -17,6 +17,7 @@ public class Chrome_Driver_Manager extends DriverManager {
 	protected void createDiver() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");

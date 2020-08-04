@@ -3,7 +3,7 @@
   <test name="Run On Chrome">
    <parameter name = "browser" value = "chrome"/>
     <classes>
-      <class name="com.bankGuru.login.Login_01_RegisterAndLogin"/>
+      <class name="com.bankGuru.login.Login_02_Register_And_Login_DriverLifeCycle"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

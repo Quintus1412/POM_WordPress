@@ -8,37 +8,37 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.ExpectedExceptions;
 
-import com.sun.org.apache.bcel.internal.classfile.ParameterAnnotationEntry;
-
-import jdk.nashorn.internal.runtime.GlobalConstants;
 import pageObjects.wordpress.DashBoardPageObject;
 import pageObjects.wordpress.MediaPageObject;
 import pageObjects.wordpress.PagesPageObject;
 import pageObjects.wordpress.PostsPageObject;
+import pageOjects.bankGuru.BalancePageObject;
+import pageOjects.bankGuru.DeleteCustomerPageObject;
+import pageOjects.bankGuru.DepositPageObject;
+import pageOjects.bankGuru.EditCustomerPageObject;
+import pageOjects.bankGuru.HomePageObject;
+import pageOjects.bankGuru.NewCustomerPageObject;
+import pageOjects.bankGuru.WithDrawPageObject;
+import pageUI.bankGuru.AbstractPageUI_BankGuRu;
 import pageUI.wordpress.AbstractPageUI;
-import pageUI.wordpress.DashBoardPageUI;
-import pageUI.wordpress.MediaPageUI;
-import pageUI.wordpress.PagesPageUI;
-import pageUI.wordpress.PostPageUI;
 
 public abstract class AbstractPage {
 
 	public void openURL(WebDriver driver, String url) {
 		driver.get(url);
 	}
- public boolean isPageLoaded(WebDriver driver, String url) {
-	 String actualUrl = driver.getCurrentUrl();
-	 return actualUrl.equals(url);
-	 
- }
- 
+
+	public boolean isPageLoaded(WebDriver driver, String url) {
+		String actualUrl = driver.getCurrentUrl();
+		return actualUrl.equals(url);
+
+	}
+
 	public String getPageTitle(WebDriver driver) {
 		return driver.getTitle();
 	}
@@ -141,6 +141,16 @@ public abstract class AbstractPage {
 		findElementByXpath(driver, locator).click();
 	}
 
+	public void clickToElement(WebDriver driver, String locator, String... values) {
+
+		findElementByXpath(driver, castToObject(locator, values)).click();
+	}
+
+	public String castToObject(String locator, String... values) {
+		return String.format(locator, (Object[]) values);
+
+	}
+
 	public void senkeyToElement(WebDriver driver, String locator, String value) {
 		element = findElementByXpath(driver, locator);
 		element.clear();
@@ -218,6 +228,9 @@ public abstract class AbstractPage {
 
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
 		return findElementByXpath(driver, locator).isDisplayed();
+	}
+	public boolean isElementDisplayed(WebDriver driver, String locator, String ...values) {
+		return findElementByXpath(driver, castToObject(locator, values)).isDisplayed();
 	}
 
 	public boolean isElementSelected(WebDriver driver, String locator) {
@@ -324,50 +337,169 @@ public abstract class AbstractPage {
 	}
 
 	public void waitForElementVisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(locator)));
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(byXpath(locator)));
 	}
 
+	public void waitForElementInvisible(WebDriver driver, String locator, String... values) {
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(byXpath(castToObject(locator, values))));
+	}
+
 	public void waitForElementClickable(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, longTimeOut);
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(locator)));
 	}
-// common Funtion -> Open Page
+
+	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(castToObject(locator, values))));
+	}
+
+	// Apply for case: a few common pages (10-15-20 pages)
+	// common Funtion of WORD PRESS project -> Open Page
+	
+	public AbstractPage clickToDyamicAFewPageMenu_Guru(WebDriver driver, String menuName) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
+		clickToElement(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
+		
+		if (menuName.equals("Edit Customer")) {
+			return PageGeneratorManager_BankGuRu.getEditCustomerPage(driver);
+		} else if (menuName.equals("New Customer")) {
+			return PageGeneratorManager_BankGuRu.getNewCustomerPage(driver);
+		} else if (menuName.equals("Delete Customer")) {
+			return PageGeneratorManager_BankGuRu.getDeleteCustomerPage(driver);
+		} else {
+			return PageGeneratorManager_BankGuRu.getHomePage(driver);
+		}
+	}
+	
+	// Apply for case: A lots of common page (No specific object)
+		public void clickToDyamicALotPagesMenu(WebDriver driver, String menuName) {
+			waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+			clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+
+			if (menuName.equals("post")) {
+				 PageGeneratorManager_WordPress.getPostsPage(driver);
+			} else if (menuName.equals("media")) {
+				 PageGeneratorManager_WordPress.getMediaPage(driver);
+			} else if (menuName.equals("page")) {
+				 PageGeneratorManager_WordPress.getPagesPage(driver);
+			} else {
+				 PageGeneratorManager_WordPress.getDashBoardPage(driver);
+			}
+		}
+		
+		public AbstractPage clickToDyamicAFewPageMenu(WebDriver driver, String menuName) {
+			waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+			clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+			
+			if (menuName.equals("post")) {
+				return PageGeneratorManager_WordPress.getPostsPage(driver);
+			} else if (menuName.equals("media")) {
+				return PageGeneratorManager_WordPress.getMediaPage(driver);
+			} else if (menuName.equals("page")) {
+				return PageGeneratorManager_WordPress.getPagesPage(driver);
+			} else {
+				return PageGeneratorManager_WordPress.getDashBoardPage(driver);
+			}
+		}
+	// Apply for case: A lots of common page (No specific object)
+	public void clickToDyamicALotPagesMenu_Guru(WebDriver driver, String menuName) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
+		clickToElement(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
+		
+		if (menuName.equals("Edit Customer")) {
+			PageGeneratorManager_BankGuRu.getEditCustomerPage(driver);
+		} else if (menuName.equals("New Customer")) {
+			PageGeneratorManager_BankGuRu.getNewCustomerPage(driver);
+		} else if (menuName.equals("Delete Customer")) {
+			PageGeneratorManager_BankGuRu.getDeleteCustomerPage(driver);
+		} else {
+			PageGeneratorManager_BankGuRu.getHomePage(driver);
+		}
+	}
+
+	
+
 	public PostsPageObject clickToPostsMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.POSTS_LINK);
 		clickToElement(driver, AbstractPageUI.POSTS_LINK);
 		return PageGeneratorManager_WordPress.getPostsPage(driver);
 	}
+
 	public PagesPageObject clickToPagesMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.PAGES_LINK);
 		clickToElement(driver, AbstractPageUI.PAGES_LINK);
 		return PageGeneratorManager_WordPress.getPagesPage(driver);
 	}
+
 	public MediaPageObject clickToMediaMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.MEDIA_LINK);
 		clickToElement(driver, AbstractPageUI.MEDIA_LINK);
 		return PageGeneratorManager_WordPress.getMediaPage(driver);
 	}
+
 	public DashBoardPageObject clickToDashboardMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.DASHBOARD_LINK);
 		clickToElement(driver, AbstractPageUI.DASHBOARD_LINK);
 		return PageGeneratorManager_WordPress.getDashBoardPage(driver);
 	}
 
-	
-	
+	// Common Funtion of BANK GURU PROJECT
+	public WithDrawPageObject openWithDrawPage(WebDriver driver) {
+		// waitForElementClickable(driver, AbstractPageUI_BankGuRu.WITHDRAW_MENU);
+		clickToElement(driver, AbstractPageUI_BankGuRu.WITHDRAW_MENU);
+		return PageGeneratorManager_BankGuRu.getWithdrawPage(driver);
+	}
+
+	public BalancePageObject openBalancePage(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.BALANCE_ENQUIRY);
+		clickToElement(driver, AbstractPageUI_BankGuRu.BALANCE_ENQUIRY);
+		return PageGeneratorManager_BankGuRu.getBalancePage(driver);
+	}
+
+	public EditCustomerPageObject openEditCustomerPage(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.EDIT_CUSTOMER_MENU);
+		clickToElement(driver, AbstractPageUI_BankGuRu.EDIT_CUSTOMER_MENU);
+		return PageGeneratorManager_BankGuRu.getEditCustomerPage(driver);
+	}
+
+	public NewCustomerPageObject openNewCustomerPage(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.NEW_CUSTOMER_MENU);
+		clickToElement(driver, AbstractPageUI_BankGuRu.NEW_CUSTOMER_MENU);
+		return PageGeneratorManager_BankGuRu.getNewCustomerPage(driver);
+	}
+
+	public DepositPageObject openDepositPage(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DEPOSIT_MENU);
+		clickToElement(driver, AbstractPageUI_BankGuRu.DEPOSIT_MENU);
+		return PageGeneratorManager_BankGuRu.getDepositerPage(driver);
+	}
+
+	public DeleteCustomerPageObject openDeleteCustomerPage(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DELETE_CUSTOMER_MENU);
+		clickToElement(driver, AbstractPageUI_BankGuRu.DELETE_CUSTOMER_MENU);
+		return PageGeneratorManager_BankGuRu.getDeleteCustomerPage(driver);
+	}
+
+	public HomePageObject openHomePage(WebDriver driver) {
+		waitForElementClickable(driver, AbstractPageUI_BankGuRu.HOME_OR_MANAGER_MENU_MENU);
+		clickToElement(driver, AbstractPageUI_BankGuRu.HOME_OR_MANAGER_MENU_MENU);
+		return PageGeneratorManager_BankGuRu.getHomePage(driver);
+	}
+
 	private Select select;
 	private Actions action;
 	private WebElement element;
 	private List<WebElement> elements;
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor jsExecutor;
-	private long shortTimeOut = 5;
-	private long longTimeOut = 20;
+
 
 }

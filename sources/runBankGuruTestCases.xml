@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Bank Guru" parallel="false">
-  <test name="Run On Chrome">
-   <parameter name = "browser" value = "chrome"/>
-    <classes>
-      <class name="com.bankGuru.login.Login_02_Register_And_Login_DriverLifeCycle"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->

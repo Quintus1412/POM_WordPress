@@ -36,7 +36,7 @@ public class Login_08_Dynamic_Locator_Rest_Param extends AbstractTest {
 	PagesPageObject pagesPage;
 	
 	
-	String loginPageUrl;
+
 	DriverManager driverManager;
 
 	@Parameters({ "browser" })

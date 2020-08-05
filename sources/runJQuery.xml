@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="jquery" parallel="tests" thread-count="3">
+
+ <test name="Run on Chrome">
+  <parameter name = "browser" value = "chrome"/>
+    <classes>
+      <class name="com.jquey.datatable.JQuery_01_DataTable"/>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->
+
+ 

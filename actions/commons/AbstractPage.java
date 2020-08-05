@@ -150,9 +150,15 @@ public abstract class AbstractPage {
 		return String.format(locator, (Object[]) values);
 
 	}
-
+	
 	public void senkeyToElement(WebDriver driver, String locator, String value) {
 		element = findElementByXpath(driver, locator);
+		element.clear();
+		element.sendKeys(value);
+	}
+
+	public void senkeyToElement(WebDriver driver, String locator, String value, String ...values) {
+		element = findElementByXpath(driver, castToObject(locator, values));
 		element.clear();
 		element.sendKeys(value);
 	}
@@ -211,6 +217,10 @@ public abstract class AbstractPage {
 		elements = findElementsByXpath(driver, locator);
 		return elements.size();
 	}
+	public int countElementNumber(WebDriver driver, String locator, String ...values) {
+		elements = findElementsByXpath(driver, castToObject(locator, values));
+		return elements.size();
+	}
 
 	public void checkToCheckbox(WebDriver driver, String locator) {
 		element = findElementByXpath(driver, locator);
@@ -264,9 +274,14 @@ public abstract class AbstractPage {
 		action.contextClick(findElementByXpath(driver, locator)).perform();
 	}
 
-	public void sendKeyBoard(WebDriver driver, String locator, Keys key) {
+	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key) {
 		action = new Actions(driver);
 		action.sendKeys(findElementByXpath(driver, locator), key).perform();
+	}
+	
+	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key, String ...values) {
+		action = new Actions(driver);
+		action.sendKeys(findElementByXpath(driver, castToObject(locator, values)), key).perform();
 	}
 
 	public Object executeForBrowser(WebDriver driver, String javaSript) {
@@ -336,6 +351,10 @@ public abstract class AbstractPage {
 		return false;
 	}
 
+	public void waitForElementVisible(WebDriver driver, String locator, String ...values) {
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(castToObject(locator, values))));
+	}
 	public void waitForElementVisible(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(locator)));
@@ -364,20 +383,7 @@ public abstract class AbstractPage {
 	// Apply for case: a few common pages (10-15-20 pages)
 	// common Funtion of WORD PRESS project -> Open Page
 	
-	public AbstractPage clickToDyamicAFewPageMenu_Guru(WebDriver driver, String menuName) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
-		clickToElement(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
-		
-		if (menuName.equals("Edit Customer")) {
-			return PageGeneratorManager_BankGuRu.getEditCustomerPage(driver);
-		} else if (menuName.equals("New Customer")) {
-			return PageGeneratorManager_BankGuRu.getNewCustomerPage(driver);
-		} else if (menuName.equals("Delete Customer")) {
-			return PageGeneratorManager_BankGuRu.getDeleteCustomerPage(driver);
-		} else {
-			return PageGeneratorManager_BankGuRu.getHomePage(driver);
-		}
-	}
+
 	
 	// Apply for case: A lots of common page (No specific object)
 		public void clickToDyamicALotPagesMenu(WebDriver driver, String menuName) {
@@ -410,21 +416,7 @@ public abstract class AbstractPage {
 			}
 		}
 	// Apply for case: A lots of common page (No specific object)
-	public void clickToDyamicALotPagesMenu_Guru(WebDriver driver, String menuName) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
-		clickToElement(driver, AbstractPageUI_BankGuRu.DYNAMIC_MENU, menuName);
-		
-		if (menuName.equals("Edit Customer")) {
-			PageGeneratorManager_BankGuRu.getEditCustomerPage(driver);
-		} else if (menuName.equals("New Customer")) {
-			PageGeneratorManager_BankGuRu.getNewCustomerPage(driver);
-		} else if (menuName.equals("Delete Customer")) {
-			PageGeneratorManager_BankGuRu.getDeleteCustomerPage(driver);
-		} else {
-			PageGeneratorManager_BankGuRu.getHomePage(driver);
-		}
-	}
-
+	
 	
 
 	public PostsPageObject clickToPostsMenu(WebDriver driver) {
@@ -452,47 +444,7 @@ public abstract class AbstractPage {
 	}
 
 	// Common Funtion of BANK GURU PROJECT
-	public WithDrawPageObject openWithDrawPage(WebDriver driver) {
-		// waitForElementClickable(driver, AbstractPageUI_BankGuRu.WITHDRAW_MENU);
-		clickToElement(driver, AbstractPageUI_BankGuRu.WITHDRAW_MENU);
-		return PageGeneratorManager_BankGuRu.getWithdrawPage(driver);
-	}
-
-	public BalancePageObject openBalancePage(WebDriver driver) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.BALANCE_ENQUIRY);
-		clickToElement(driver, AbstractPageUI_BankGuRu.BALANCE_ENQUIRY);
-		return PageGeneratorManager_BankGuRu.getBalancePage(driver);
-	}
-
-	public EditCustomerPageObject openEditCustomerPage(WebDriver driver) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.EDIT_CUSTOMER_MENU);
-		clickToElement(driver, AbstractPageUI_BankGuRu.EDIT_CUSTOMER_MENU);
-		return PageGeneratorManager_BankGuRu.getEditCustomerPage(driver);
-	}
-
-	public NewCustomerPageObject openNewCustomerPage(WebDriver driver) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.NEW_CUSTOMER_MENU);
-		clickToElement(driver, AbstractPageUI_BankGuRu.NEW_CUSTOMER_MENU);
-		return PageGeneratorManager_BankGuRu.getNewCustomerPage(driver);
-	}
-
-	public DepositPageObject openDepositPage(WebDriver driver) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DEPOSIT_MENU);
-		clickToElement(driver, AbstractPageUI_BankGuRu.DEPOSIT_MENU);
-		return PageGeneratorManager_BankGuRu.getDepositerPage(driver);
-	}
-
-	public DeleteCustomerPageObject openDeleteCustomerPage(WebDriver driver) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.DELETE_CUSTOMER_MENU);
-		clickToElement(driver, AbstractPageUI_BankGuRu.DELETE_CUSTOMER_MENU);
-		return PageGeneratorManager_BankGuRu.getDeleteCustomerPage(driver);
-	}
-
-	public HomePageObject openHomePage(WebDriver driver) {
-		waitForElementClickable(driver, AbstractPageUI_BankGuRu.HOME_OR_MANAGER_MENU_MENU);
-		clickToElement(driver, AbstractPageUI_BankGuRu.HOME_OR_MANAGER_MENU_MENU);
-		return PageGeneratorManager_BankGuRu.getHomePage(driver);
-	}
+	
 
 	private Select select;
 	private Actions action;

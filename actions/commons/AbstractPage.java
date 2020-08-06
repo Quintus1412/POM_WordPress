@@ -1,11 +1,14 @@
 package commons;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -150,14 +153,14 @@ public abstract class AbstractPage {
 		return String.format(locator, (Object[]) values);
 
 	}
-	
+
 	public void senkeyToElement(WebDriver driver, String locator, String value) {
 		element = findElementByXpath(driver, locator);
 		element.clear();
 		element.sendKeys(value);
 	}
 
-	public void senkeyToElement(WebDriver driver, String locator, String value, String ...values) {
+	public void senkeyToElement(WebDriver driver, String locator, String value, String... values) {
 		element = findElementByXpath(driver, castToObject(locator, values));
 		element.clear();
 		element.sendKeys(value);
@@ -179,6 +182,17 @@ public abstract class AbstractPage {
 	public String getSelectedItemInDropdown(WebDriver driver, String locator) {
 		select = new Select(findElementByXpath(driver, locator));
 		return select.getFirstSelectedOption().getText();
+	}
+
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		String fullFileName = "";
+		for (String file : fileNames) {
+			fullFileName = fullFileName + GlobalConstants.UPLOAD_FOLDER + file + "\n";
+
+		}
+		fullFileName = fullFileName.trim();
+		senkeyToElement(driver, AbstractPageUI.UPLOAD_FILE_TYPE, fullFileName);
+
 	}
 
 	public void sleepInSecond(long timeout) {
@@ -217,7 +231,8 @@ public abstract class AbstractPage {
 		elements = findElementsByXpath(driver, locator);
 		return elements.size();
 	}
-	public int countElementNumber(WebDriver driver, String locator, String ...values) {
+
+	public int countElementNumber(WebDriver driver, String locator, String... values) {
 		elements = findElementsByXpath(driver, castToObject(locator, values));
 		return elements.size();
 	}
@@ -237,9 +252,52 @@ public abstract class AbstractPage {
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
-		return findElementByXpath(driver, locator).isDisplayed();
+		try {
+			return findElementByXpath(driver, locator).isDisplayed();
+		} catch (NoSuchElementException noSuchException) {
+			noSuchException.printStackTrace();
+			return false;
+		}
 	}
-	public boolean isElementDisplayed(WebDriver driver, String locator, String ...values) {
+
+	public boolean isControlDisplayed(WebDriver driver, String locator) {
+		boolean status = true;
+		try {
+			element = driver.findElement(By.xpath(locator));
+			if (element.isDisplayed()) {
+				return status;
+			}
+		} catch (NoSuchElementException noSuchException) {
+			noSuchException.printStackTrace();
+			return false;
+		}
+		return status;
+	}
+
+	public void overrideGlobalTimeout(WebDriver driver, long timeout) {
+		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+	}
+
+	public boolean isElementUndisplayed(WebDriver driver, String locator, String ...values) {
+		overrideGlobalTimeout(driver, GlobalConstants.SHORT_TIMEOUT);
+		List<WebElement> elements = driver.findElements(By.xpath(castToObject(locator, values)));
+
+		if (elements.size() == 0) {
+			System.out.println("Element not in DOM");
+			overrideGlobalTimeout(driver, GlobalConstants.LONG_TIMEOUT);
+			return true;
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("Element in DOM but not visible/ displayed");
+			overrideGlobalTimeout(driver, GlobalConstants.LONG_TIMEOUT);
+			return true;
+		} else {
+			System.out.println("Element in DOM and visible");
+			overrideGlobalTimeout(driver, GlobalConstants.LONG_TIMEOUT);
+			return false;
+		}
+	}
+
+	public boolean isElementDisplayed(WebDriver driver, String locator, String... values) {
 		return findElementByXpath(driver, castToObject(locator, values)).isDisplayed();
 	}
 
@@ -278,8 +336,8 @@ public abstract class AbstractPage {
 		action = new Actions(driver);
 		action.sendKeys(findElementByXpath(driver, locator), key).perform();
 	}
-	
-	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key, String ...values) {
+
+	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key, String... values) {
 		action = new Actions(driver);
 		action.sendKeys(findElementByXpath(driver, castToObject(locator, values)), key).perform();
 	}
@@ -351,18 +409,30 @@ public abstract class AbstractPage {
 		return false;
 	}
 
-	public void waitForElementVisible(WebDriver driver, String locator, String ...values) {
+	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
 		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(castToObject(locator, values))));
 	}
+
 	public void waitForElementVisible(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(locator)));
 	}
 
+	public void waitForAllElementsVisible(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byXpath(locator)));
+	}
+
 	public void waitForElementInvisible(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(byXpath(locator)));
+	}
+
+	public void waitForElementsInvisible(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		elements = findElementsByXpath(driver, locator);
+		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(elements));
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locator, String... values) {
@@ -380,44 +450,86 @@ public abstract class AbstractPage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(castToObject(locator, values))));
 	}
 
+	public boolean areFilesUploadedDisplayed(WebDriver driver, String... fileNames) {
+		boolean status = false;
+		int number = fileNames.length;
+		waitForElementsInvisible(driver, AbstractPageUI.UPLOADING_PROGRESS_ICON);
+		sleepInSecond(5);
+		// waitForAllElementsVisible(driver, AbstractPageUI.UPLOADED_IMAGE);
+		// get all uploaded files
+		elements = findElementsByXpath(driver, AbstractPageUI.UPLOADED_IMAGE);
+		// get the source value = name of images
+		List<String> imageValue = new ArrayList<String>();
+
+		int i = 0;
+		for (WebElement img : elements) {
+			System.out.println(img.getAttribute("src"));
+			imageValue.add(img.getAttribute("src"));
+			i++;
+			if (i == number) {
+				break;
+			}
+		}
+
+		for (String fileName : fileNames) {
+			String[] files = fileName.split("\\.");
+			fileName = files[0].toLowerCase();
+
+			for (i = 0; i < imageValue.size(); i++) {
+
+				if (!imageValue.get(i).contains(fileName)) {
+					status = false;
+					if (i == imageValue.size() - 1) {
+						return status;
+					}
+				} else {
+					status = true;
+					break;
+				}
+			}
+		}
+		return status;
+	}
+
+	public static String splitAndConvertToLowerCase(String name) {
+		String[] text = name.split("\\.");
+		return text[0].toLowerCase();
+
+	}
 	// Apply for case: a few common pages (10-15-20 pages)
 	// common Funtion of WORD PRESS project -> Open Page
-	
 
-	
 	// Apply for case: A lots of common page (No specific object)
-		public void clickToDyamicALotPagesMenu(WebDriver driver, String menuName) {
-			waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
-			clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+	public void clickToDyamicALotPagesMenu(WebDriver driver, String menuName) {
+		waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+		clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
 
-			if (menuName.equals("post")) {
-				 PageGeneratorManager_WordPress.getPostsPage(driver);
-			} else if (menuName.equals("media")) {
-				 PageGeneratorManager_WordPress.getMediaPage(driver);
-			} else if (menuName.equals("page")) {
-				 PageGeneratorManager_WordPress.getPagesPage(driver);
-			} else {
-				 PageGeneratorManager_WordPress.getDashBoardPage(driver);
-			}
+		if (menuName.equals("post")) {
+			PageGeneratorManager_WordPress.getPostsPage(driver);
+		} else if (menuName.equals("media")) {
+			PageGeneratorManager_WordPress.getMediaPage(driver);
+		} else if (menuName.equals("page")) {
+			PageGeneratorManager_WordPress.getPagesPage(driver);
+		} else {
+			PageGeneratorManager_WordPress.getDashBoardPage(driver);
 		}
-		
-		public AbstractPage clickToDyamicAFewPageMenu(WebDriver driver, String menuName) {
-			waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
-			clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
-			
-			if (menuName.equals("post")) {
-				return PageGeneratorManager_WordPress.getPostsPage(driver);
-			} else if (menuName.equals("media")) {
-				return PageGeneratorManager_WordPress.getMediaPage(driver);
-			} else if (menuName.equals("page")) {
-				return PageGeneratorManager_WordPress.getPagesPage(driver);
-			} else {
-				return PageGeneratorManager_WordPress.getDashBoardPage(driver);
-			}
+	}
+
+	public AbstractPage clickToDyamicAFewPageMenu(WebDriver driver, String menuName) {
+		waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+		clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
+
+		if (menuName.equals("post")) {
+			return PageGeneratorManager_WordPress.getPostsPage(driver);
+		} else if (menuName.equals("media")) {
+			return PageGeneratorManager_WordPress.getMediaPage(driver);
+		} else if (menuName.equals("page")) {
+			return PageGeneratorManager_WordPress.getPagesPage(driver);
+		} else {
+			return PageGeneratorManager_WordPress.getDashBoardPage(driver);
 		}
+	}
 	// Apply for case: A lots of common page (No specific object)
-	
-	
 
 	public PostsPageObject clickToPostsMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.POSTS_LINK);
@@ -444,7 +556,6 @@ public abstract class AbstractPage {
 	}
 
 	// Common Funtion of BANK GURU PROJECT
-	
 
 	private Select select;
 	private Actions action;
@@ -452,6 +563,5 @@ public abstract class AbstractPage {
 	private List<WebElement> elements;
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor jsExecutor;
-
 
 }

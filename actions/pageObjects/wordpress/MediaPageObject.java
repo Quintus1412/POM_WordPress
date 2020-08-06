@@ -14,6 +14,12 @@ public class MediaPageObject extends AbstractPage {
 		driver = mapDriver;
 		System.out.println("Driver at Media page is"+ driver.toString());
 	}
+	public void clickToAddNewButton() {
+		waitForElementVisible(driver, MediaPageUI.ADD_NEW_BUTTON);
+		clickToElement(driver, MediaPageUI.ADD_NEW_BUTTON);
+		
+	}
+	
 	
 	
 }

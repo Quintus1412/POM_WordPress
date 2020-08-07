@@ -39,13 +39,13 @@ public class Login_07_Driver_Life_Cycle extends AbstractTest {
 	String loginPageUrl;
 	DriverManager driverManager;
 
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driverManager = BrowserDriverFactory.getDriverManager(browserName);
-		/// driver = 1234-56245-145-6524
-		driver = driverManager.getDriver();	
-		// Open URL -> navigate to login page
+	public void beforeClass(String browserName, String url) {
+		driver = getBrowserDriver(browserName, url);
+		
+		//driverManager = BrowserDriverFactory.getDriverManager(browserName);
+		
 		loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
 	}
 

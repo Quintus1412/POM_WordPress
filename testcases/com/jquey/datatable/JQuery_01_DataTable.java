@@ -22,18 +22,17 @@ import commons.AbstractTest;
 import commons.PageGeneratorManager_JQuery;
 import commons.PageGeneratorManager_WordPress;
 import pageObject.jquery.DataTablePageObject;
-import pageObjects.wordpress.DashBoardPageObject;
-import pageObjects.wordpress.LogInPageObject;
-import pageObjects.wordpress.MediaPageObject;
-import pageObjects.wordpress.PagesPageObject;
-import pageObjects.wordpress.PostsPageObject;
+import pageObjects.wordpress.admin.DashBoardPageObject;
+import pageObjects.wordpress.admin.LogInPageObject;
+import pageObjects.wordpress.admin.MediaPageObject;
+import pageObjects.wordpress.admin.PagesPageObject;
+import pageObjects.wordpress.admin.PostsPageObject;
 
 public class JQuery_01_DataTable extends AbstractTest {
 
 	WebDriver driver;
-	//driver is undefined = xxxxx-xxx-xx-xxx-xxxx
+	// driver is undefined = xxxxx-xxx-xx-xxx-xxxx
 	DataTablePageObject datatablePage;
-	
 
 	DriverManager driverManager;
 
@@ -42,38 +41,34 @@ public class JQuery_01_DataTable extends AbstractTest {
 	public void beforeClass(String browserName) {
 		driverManager = BrowserDriverFactory.getDriverManager(browserName);
 		/// driver = 1234-56245-145-6524
-		driver = driverManager.getDriver("https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/");	
+		driver = driverManager.getDriver("https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/");
 		// Open URL -> navigate to login page
 		datatablePage = PageGeneratorManager_JQuery.getJQueryPage(driver);
 	}
 
-
-
 	public void TC_01_LoginToSytem() {
-		datatablePage.inputToColumnByName("Country","AFRICA" );
+		datatablePage.inputToColumnByName("Country", "AFRICA");
 		Assert.assertTrue(datatablePage.isOneRowDisplayed("AFRICA"));
 		datatablePage.refresh(driver);
-		
-		datatablePage.inputToColumnByName("Total","553353" );
+
+		datatablePage.inputToColumnByName("Total", "553353");
 		Assert.assertTrue(datatablePage.isOneRowDisplayed("553353"));
-		
-		
-		//Assert.assertTrue(datatablePage.isOneRowDisplayed());
-		
+
+		// Assert.assertTrue(datatablePage.isOneRowDisplayed());
+
 	}
-	
+
 	public void TC_02_Edit_Delate_Icon_By_Country_Name() {
 		//
 		//
-		
+
 		datatablePage.refresh(driver);
-		datatablePage.clickToDynamicIconByCountryName("remove","Aruba");
-		datatablePage.clickToDynamicIconByCountryName("remove","Arab Rep of Egypt");
-		datatablePage.clickToDynamicIconByCountryName("remove","Angola");
-		
-		
+		datatablePage.clickToDynamicIconByCountryName("remove", "Aruba");
+		datatablePage.clickToDynamicIconByCountryName("remove", "Arab Rep of Egypt");
+		datatablePage.clickToDynamicIconByCountryName("remove", "Angola");
+
 	}
-	
+
 	public void TC_03_Paging_By_Index() {
 		datatablePage.refresh(driver);
 		datatablePage.navigateToPageByIndex("6");
@@ -82,17 +77,17 @@ public class JQuery_01_DataTable extends AbstractTest {
 		Assert.assertTrue(datatablePage.ispageActiveByIndex("5"));
 		datatablePage.navigateToPageByIndex("4");
 		Assert.assertTrue(datatablePage.ispageActiveByIndex("4"));
-		
-		
+
 	}
+
 	@Test
 	public void TC_04_DynamicRow() {
-	//	datatablePage.openURL(driver,"https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/" );
-		
+		// datatablePage.openURL(driver,"https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/" );
+
 		datatablePage.InputToDynamicTextboxAtRowNumber("Company", "2", "data 1");
 		datatablePage.InputToDynamicTextboxAtRowNumber("Contact Person", "1", "data 1");
-	datatablePage.InputToDynamicTextboxAtRowNumber("Order Placed", "2", "5");
-	
+		datatablePage.InputToDynamicTextboxAtRowNumber("Order Placed", "2", "5");
+
 	}
 
 	public int randomNumber() {

@@ -20,11 +20,11 @@ import Browsers_Factory.DriverManager;
 import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.PageGeneratorManager_WordPress;
-import pageObjects.wordpress.DashBoardPageObject;
-import pageObjects.wordpress.LogInPageObject;
-import pageObjects.wordpress.MediaPageObject;
-import pageObjects.wordpress.PagesPageObject;
-import pageObjects.wordpress.PostsPageObject;
+import pageObjects.wordpress.admin.DashBoardPageObject;
+import pageObjects.wordpress.admin.LogInPageObject;
+import pageObjects.wordpress.admin.MediaPageObject;
+import pageObjects.wordpress.admin.PagesPageObject;
+import pageObjects.wordpress.admin.PostsPageObject;
 
 public class Login_11_Assert_Verify extends AbstractTest {
 

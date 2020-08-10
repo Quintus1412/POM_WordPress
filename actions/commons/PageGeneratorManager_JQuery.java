@@ -3,7 +3,7 @@ package commons;
 import org.openqa.selenium.WebDriver;
 
 import pageObject.jquery.DataTablePageObject;
-import pageObjects.wordpress.PagesPageObject;
+import pageObjects.wordpress.admin.PagesPageObject;
 
 
 

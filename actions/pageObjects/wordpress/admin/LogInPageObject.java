@@ -1,10 +1,10 @@
-package pageObjects.wordpress;
+package pageObjects.wordpress.admin;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 import commons.PageGeneratorManager_WordPress;
-import pageUI.wordpress.LogInPageUI;
+import pageUI.wordpress.admin.LogInPageUI;
 
 public class LogInPageObject extends AbstractPage {
 	WebDriver driver;
@@ -23,7 +23,7 @@ public class LogInPageObject extends AbstractPage {
 	public DashBoardPageObject clickToContinueOrLoginButton() {
 		waitForElementVisible(driver, LogInPageUI.CONTINUE_OR_LOGIN_BUTTON);
 		clickToElement(driver, LogInPageUI.CONTINUE_OR_LOGIN_BUTTON);
-		return PageGeneratorManager_WordPress.getDashBoardPage(driver);
+		return PageGeneratorManager_WordPress.getDashBoardAdminPage(driver);
 		
 
 	}

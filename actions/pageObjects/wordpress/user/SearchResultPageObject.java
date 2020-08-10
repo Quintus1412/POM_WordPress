@@ -1,17 +1,17 @@
-package pageObjects.wordpress;
+package pageObjects.wordpress.user;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 import commons.PageGeneratorManager_WordPress;
-import pageUI.wordpress.AbstractPageUI;
-import pageUI.wordpress.DashBoardPageUI;
-import pageUI.wordpress.PostPageUI;
+import pageUI.wordpress.admin.AbstractPageUI;
+import pageUI.wordpress.admin.DashBoardPageUI;
+import pageUI.wordpress.admin.PostPageUI;
 
-public class DashBoardPageObject extends AbstractPage {
+public class SearchResultPageObject extends AbstractPage {
 	WebDriver driver;
 
-	public DashBoardPageObject(WebDriver mapDriver) {
+	public SearchResultPageObject(WebDriver mapDriver) {
 		driver = mapDriver;
 		System.out.println("Driver at Dashboard page is"+ driver.toString());
 	}

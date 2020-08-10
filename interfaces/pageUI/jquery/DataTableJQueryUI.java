@@ -9,7 +9,7 @@ public class DataTableJQueryUI {
 	
 	
 	public static final String DYNAMIC_COLUMN_POSITION_INDEX ="//th[text()='%s']/preceding-sibling::th";
-public static final String DYNAMIC_TEXTBOX_BY_COLUMN_AND_ROW_INDEX ="//tr[%s]//td[%s]/input";
+	public static final String DYNAMIC_TEXTBOX_BY_COLUMN_AND_ROW_INDEX ="//tr[%s]//td[%s]/input";
 
 
 	

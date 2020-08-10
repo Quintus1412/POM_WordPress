@@ -16,19 +16,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObjects.wordpress.DashBoardPageObject;
-import pageObjects.wordpress.MediaPageObject;
-import pageObjects.wordpress.PagesPageObject;
-import pageObjects.wordpress.PostsPageObject;
-import pageOjects.bankGuru.BalancePageObject;
-import pageOjects.bankGuru.DeleteCustomerPageObject;
-import pageOjects.bankGuru.DepositPageObject;
-import pageOjects.bankGuru.EditCustomerPageObject;
-import pageOjects.bankGuru.HomePageObject;
-import pageOjects.bankGuru.NewCustomerPageObject;
-import pageOjects.bankGuru.WithDrawPageObject;
-import pageUI.bankGuru.AbstractPageUI_BankGuRu;
-import pageUI.wordpress.AbstractPageUI;
+import pageObjects.wordpress.admin.DashBoardPageObject;
+import pageObjects.wordpress.admin.MediaPageObject;
+import pageObjects.wordpress.admin.PagesPageObject;
+import pageObjects.wordpress.admin.PostsPageObject;
+import pageObjects.wordpress.user.HomePageObject;
+import pageObjects.wordpress.user.SearchResultPageObject;
+import pageUI.wordpress.admin.AbstractPageUI;
 
 public abstract class AbstractPage {
 
@@ -184,7 +178,7 @@ public abstract class AbstractPage {
 		return select.getFirstSelectedOption().getText();
 	}
 
-	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+	public void uploadMultipleFiles(WebDriver driver, String...fileNames) {
 		String fullFileName = "";
 		for (String file : fileNames) {
 			fullFileName = fullFileName + GlobalConstants.UPLOAD_FOLDER + file + "\n";
@@ -278,7 +272,7 @@ public abstract class AbstractPage {
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 	}
 
-	public boolean isElementUndisplayed(WebDriver driver, String locator, String ...values) {
+	public boolean isElementUndisplayed(WebDriver driver, String locator, String... values) {
 		overrideGlobalTimeout(driver, GlobalConstants.SHORT_TIMEOUT);
 		List<WebElement> elements = driver.findElements(By.xpath(castToObject(locator, values)));
 
@@ -309,7 +303,7 @@ public abstract class AbstractPage {
 		return findElementByXpath(driver, locator).isEnabled();
 	}
 
-	public void switchToFrameOfIframe(WebDriver driver, String locator) {
+	public void switchToFrameOrIframe(WebDriver driver, String locator) {
 		driver.switchTo().frame(findElementByXpath(driver, locator));
 	}
 
@@ -380,11 +374,21 @@ public abstract class AbstractPage {
 		element = findElementByXpath(driver, locator);
 		jsExecutor.executeScript("arguments[0].click();", element);
 	}
+	
+	public void clickToElementByJS(WebDriver driver, String locator, String... values) {
+		jsExecutor = (JavascriptExecutor) driver;
+		element = findElementByXpath(driver, castToObject(locator, values));
+		jsExecutor.executeScript("arguments[0].click();", element);
+	}
 
 	public void scrollToElement(WebDriver driver, String locator) {
 		jsExecutor = (JavascriptExecutor) driver;
-		element = findElementByXpath(driver, locator);
-		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", findElementByXpath(driver, locator));
+	}
+	
+	public void scrollToElement(WebDriver driver, String locator, String...values) {
+		jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", findElementByXpath(driver, castToObject(locator, values)));
 	}
 
 	public void sendkeyToElementByJS(WebDriver driver, String locator, String value) {
@@ -419,9 +423,15 @@ public abstract class AbstractPage {
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(locator)));
 	}
 
-	public void waitForAllElementsVisible(WebDriver driver, String locator) {
+	public void waitForElementsVisible(WebDriver driver, String locator) {
 		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 		explicitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byXpath(locator)));
+	}
+
+	public void waitForAllElementsVisible(WebDriver driver, String locator) {
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		elements = findElementsByXpath(driver, locator);
+		explicitWait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locator) {
@@ -450,36 +460,35 @@ public abstract class AbstractPage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(castToObject(locator, values))));
 	}
 
-	public boolean areFilesUploadedDisplayed(WebDriver driver, String... fileNames) {
+	public boolean areFilesUploadedDisplayed(WebDriver driver,String...fileNames) {
 		boolean status = false;
 		int number = fileNames.length;
+
+		System.out.println("the number of file is "+number);
 		waitForElementsInvisible(driver, AbstractPageUI.UPLOADING_PROGRESS_ICON);
 		sleepInSecond(5);
-		// waitForAllElementsVisible(driver, AbstractPageUI.UPLOADED_IMAGE);
-		// get all uploaded files
-		elements = findElementsByXpath(driver, AbstractPageUI.UPLOADED_IMAGE);
-		// get the source value = name of images
-		List<String> imageValue = new ArrayList<String>();
 
+		elements = findElementsByXpath(driver, AbstractPageUI.UPLOADED_IMAGE);
+		List<String> imageValues = new ArrayList<String>();
 		int i = 0;
-		for (WebElement img : elements) {
-			System.out.println(img.getAttribute("src"));
-			imageValue.add(img.getAttribute("src"));
+		for (WebElement image : elements) {
+			System.out.println(image.getAttribute("src"));
+			imageValues.add(image.getAttribute("src"));
 			i++;
 			if (i == number) {
 				break;
 			}
 		}
-
 		for (String fileName : fileNames) {
+			// Verify file name matching for (String fileName : fileNames) {
 			String[] files = fileName.split("\\.");
 			fileName = files[0].toLowerCase();
 
-			for (i = 0; i < imageValue.size(); i++) {
+			for (i = 0; i < imageValues.size(); i++) {
+				if (!imageValues.get(i).contains(fileName)) {
 
-				if (!imageValue.get(i).contains(fileName)) {
 					status = false;
-					if (i == imageValue.size() - 1) {
+					if (i == imageValues.size() - 1) {
 						return status;
 					}
 				} else {
@@ -500,33 +509,24 @@ public abstract class AbstractPage {
 	// common Funtion of WORD PRESS project -> Open Page
 
 	// Apply for case: A lots of common page (No specific object)
-	public void clickToDyamicALotPagesMenu(WebDriver driver, String menuName) {
+	public void openMenuPageByName(WebDriver driver, String menuName) {
 		waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
 		clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
 
-		if (menuName.equals("post")) {
-			PageGeneratorManager_WordPress.getPostsPage(driver);
-		} else if (menuName.equals("media")) {
-			PageGeneratorManager_WordPress.getMediaPage(driver);
-		} else if (menuName.equals("page")) {
-			PageGeneratorManager_WordPress.getPagesPage(driver);
-		} else {
-			PageGeneratorManager_WordPress.getDashBoardPage(driver);
-		}
 	}
 
-	public AbstractPage clickToDyamicAFewPageMenu(WebDriver driver, String menuName) {
+	public AbstractPage openMenuPageByPageName(WebDriver driver, String menuName) {
 		waitForElementClickable(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
 		clickToElement(driver, AbstractPageUI.DYMANIC_PAGE_LINK, menuName);
 
-		if (menuName.equals("post")) {
-			return PageGeneratorManager_WordPress.getPostsPage(driver);
-		} else if (menuName.equals("media")) {
-			return PageGeneratorManager_WordPress.getMediaPage(driver);
-		} else if (menuName.equals("page")) {
-			return PageGeneratorManager_WordPress.getPagesPage(driver);
+		if (menuName.equals("Posts")) {
+			return PageGeneratorManager_WordPress.getPostsAdminPage(driver);
+		} else if (menuName.equals("Media")) {
+			return PageGeneratorManager_WordPress.getMediaAdminPage(driver);
+		} else if (menuName.equals("Pages")) {
+			return PageGeneratorManager_WordPress.getPagesAdminPage(driver);
 		} else {
-			return PageGeneratorManager_WordPress.getDashBoardPage(driver);
+			return PageGeneratorManager_WordPress.getDashBoardAdminPage(driver);
 		}
 	}
 	// Apply for case: A lots of common page (No specific object)
@@ -534,27 +534,67 @@ public abstract class AbstractPage {
 	public PostsPageObject clickToPostsMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.POSTS_LINK);
 		clickToElement(driver, AbstractPageUI.POSTS_LINK);
-		return PageGeneratorManager_WordPress.getPostsPage(driver);
+		return PageGeneratorManager_WordPress.getPostsAdminPage(driver);
 	}
 
 	public PagesPageObject clickToPagesMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.PAGES_LINK);
 		clickToElement(driver, AbstractPageUI.PAGES_LINK);
-		return PageGeneratorManager_WordPress.getPagesPage(driver);
+		return PageGeneratorManager_WordPress.getPagesAdminPage(driver);
 	}
 
 	public MediaPageObject clickToMediaMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.MEDIA_LINK);
 		clickToElement(driver, AbstractPageUI.MEDIA_LINK);
-		return PageGeneratorManager_WordPress.getMediaPage(driver);
+		return PageGeneratorManager_WordPress.getMediaAdminPage(driver);
 	}
 
 	public DashBoardPageObject clickToDashboardMenu(WebDriver driver) {
 		waitForElementClickable(driver, AbstractPageUI.DASHBOARD_LINK);
 		clickToElement(driver, AbstractPageUI.DASHBOARD_LINK);
-		return PageGeneratorManager_WordPress.getDashBoardPage(driver);
+		return PageGeneratorManager_WordPress.getDashBoardAdminPage(driver);
 	}
 
+	public DashBoardPageObject openLogedinAdminPage(WebDriver driver) {
+		openURL(driver, GlobalConstants.ADMIN_WORD_PRESS_URL);
+		return PageGeneratorManager_WordPress.getDashBoardAdminPage(driver);
+
+	}
+
+	public HomePageObject openEndUserPage(WebDriver driver) {
+		openURL(driver, GlobalConstants.USER_WORD_PRESS_URL);
+		return PageGeneratorManager_WordPress.getHomeUserPage(driver);
+
+	}
+
+	public SearchResultPageObject inputToSearchTextboxEndUserPage(WebDriver driver, String text) {
+		// wait
+		// sendkey
+		// click search
+		return PageGeneratorManager_WordPress.getSearchResultUserPage(driver);
+	}
+
+	public boolean isSuccessMessageDisplayedWithValue(WebDriver driver,String messageValue) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_SUCCESS_MESSAGE_ON_POST_OR_PAGES_PAGE, messageValue);
+		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_SUCCESS_MESSAGE_ON_POST_OR_PAGES_PAGE, messageValue);
+	}
+	
+	public boolean isRowValueDisplayedAtColumn(WebDriver driver, String rowValue, String columnName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
+		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
+	}
+	
+
+
+	public boolean isPostDisplayedOnLastedPost(WebDriver driver, String string, String string2) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	public boolean isPostImageDisplayedAtPostTitleName(WebDriver driver, String string, String string2) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	// Common Funtion of BANK GURU PROJECT
 
 	private Select select;

@@ -17,8 +17,8 @@ import org.testng.annotations.Test;
 import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.PageGeneratorManager_WordPress;
-import pageObjects.wordpress.DashBoardPageObject;
-import pageObjects.wordpress.LogInPageObject;
+import pageObjects.wordpress.admin.DashBoardPageObject;
+import pageObjects.wordpress.admin.LogInPageObject;
 
 public class Login_05_Multi_Browser_parallel extends AbstractTest {
 

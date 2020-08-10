@@ -19,8 +19,8 @@ import Browsers_Factory.DriverManager;
 import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.PageGeneratorManager_WordPress;
-import pageObjects.wordpress.DashBoardPageObject;
-import pageObjects.wordpress.LogInPageObject;
+import pageObjects.wordpress.admin.DashBoardPageObject;
+import pageObjects.wordpress.admin.LogInPageObject;
 
 public class Login_06_Browser_Factory_Pattern extends AbstractTest {
 

@@ -14,8 +14,8 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageUI.wordpress.AbstractPageUI;
-import pageUI.wordpress.PostPageUI;
+import pageUI.wordpress.admin.AbstractPageUI;
+import pageUI.wordpress.admin.PostPageUI;
 
 public abstract class AbstractTest {
 	private WebDriver driver;
@@ -95,8 +95,8 @@ public abstract class AbstractTest {
 	}
 	
 	protected int randomNumber() {
-		Random number = new Random(9999);
-		return number.nextInt();
+		Random number = new Random();
+		return number.nextInt(9999);
 	}
 
 	protected boolean verifyTrue(boolean condition) {

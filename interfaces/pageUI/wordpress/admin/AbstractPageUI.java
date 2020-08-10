@@ -1,4 +1,4 @@
-package pageUI.wordpress;
+package pageUI.wordpress.admin;
 
 public class AbstractPageUI {
 	
@@ -10,10 +10,14 @@ public class AbstractPageUI {
 	
 	
 	//Dynamic locator
-	public static final String DYMANIC_PAGE_LINK = "//a[contains(@class,'menu-icon-%s')]";
+	public static final String DYMANIC_PAGE_LINK = "//div[contains(text(),'%s')]";
 	public static final String UPLOAD_FILE_TYPE = "//input[@type='file']";
-	public static final String UPLOADING_PROGRESS_ICON="//div[@class='thumbnail']//div[@class='media-progress-bar']";
+	public static final String UPLOADING_PROGRESS_ICON="//div[@class='thumbnail']/div[@class='media-progress-bar']";
 	public static final String UPLOADED_IMAGE="//div[@class='thumbnail']//img";
+
+	public static final String DYNAMIC_SUCCESS_MESSAGE_ON_POST_OR_PAGES_PAGE="//div[@id='message']/p[contains(text(),'%s')]";
+	
+	public static final String DYNAMIC_ROW_VALUE_AT_COLUM_NAME ="//td[@data-colname='%s']//a[text()='%s']";
 	
 	
 	}

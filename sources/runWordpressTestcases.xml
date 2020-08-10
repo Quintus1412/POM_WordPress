@@ -2,16 +2,17 @@
 <suite name="Word Press" parallel="tests" thread-count="3">
 <listeners>
 <listener class-name="commons.MethodListener"/>
-<listener class-name="org.uncommons.reportng.HTMLReporter"/>
-<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
+<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
 <listener class-name="reportConfig.ExtentListener"/>
 </listeners>
 
 
-<!--   <test name="Run on HeadLess"> -->
-<!--     <parameter name = "browser" value = "chrome_headless"/> -->
+<!--   <test name="Chrome"> -->
+<!--     <parameter name = "browser" value = "chrome"/> -->
+<!--     <parameter name = "url" value = "https://automationfc.wordpress.com/wp-admin/"/> -->
 <!--     <classes> -->
-<!--       <class name="com.wordpress.login.Login_12_Log_Report_HTML"/> -->
+<!--       <class name="com.wordpress.login.Login_09_Upload_Multiple_File"/> -->
 <!--     </classes> -->
 <!--   </test>  -->
   
@@ -19,7 +20,7 @@
   <parameter name = "browser" value = "chrome"/>
   <parameter name = "url" value = "https://automationfc.wordpress.com/wp-admin/"/>
     <classes>
-      <class name="com.wordpress.login.Login_07_Driver_Life_Cycle"/>
+      <class name="com.wordpress.posts.Admin_01_Create_View_Edit_Delete"/>
     </classes>
   </test> 
 

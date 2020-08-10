@@ -19,12 +19,13 @@ import Browsers_Factory.BrowserDriverFactory;
 import Browsers_Factory.DriverManager;
 import commons.AbstractPage;
 import commons.AbstractTest;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager_WordPress;
-import pageObjects.wordpress.DashBoardPageObject;
-import pageObjects.wordpress.LogInPageObject;
-import pageObjects.wordpress.MediaPageObject;
-import pageObjects.wordpress.PagesPageObject;
-import pageObjects.wordpress.PostsPageObject;
+import pageObjects.wordpress.admin.DashBoardPageObject;
+import pageObjects.wordpress.admin.LogInPageObject;
+import pageObjects.wordpress.admin.MediaPageObject;
+import pageObjects.wordpress.admin.PagesPageObject;
+import pageObjects.wordpress.admin.PostsPageObject;
 
 public class Login_09_Upload_Multiple_File extends AbstractTest {
 
@@ -36,18 +37,24 @@ public class Login_09_Upload_Multiple_File extends AbstractTest {
 	MediaPageObject mediaPage;
 	PagesPageObject pagesPage;
 	
+	String img1 ="AAA.jpg";
+	String img2 ="Selenium.png";
+	String img3 ="AbC_01.jpg";
+	
 	
 
 	DriverManager driverManager;
 
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driverManager = BrowserDriverFactory.getDriverManager(browserName);
-		/// driver = 1234-56245-145-6524
-		driver = driverManager.getDriver("https://automationfc.wordpress.com/wp-admin/");	
-		// Open URL -> navigate to login page
-		loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
+	public void beforeClass(String browserName, String url) {
+		log.info("Pre-condition - Open browser");
+		driver= getBrowserDriver(browserName, url);
+	
+		log.info("Pre-condition - STEP 1: Open Login Page");
+		loginPage = PageGeneratorManager_WordPress.getLoginAdminPage(driver);
+		
+		
 	}
 
 	@Test
@@ -65,11 +72,13 @@ public class Login_09_Upload_Multiple_File extends AbstractTest {
 	@Test
 	public void TC_02_Upload_Media() {
 		//mediaPage = dashboardPage.clickToMediaMenu(driver);
-		mediaPage = (MediaPageObject) dashboardPage.clickToDyamicAFewPageMenu(driver, "media");
-		mediaPage.clickToAddNewButton();
-		mediaPage.uploadMultipleFiles(driver, "qqq.jpg","aaa.jpg","www.jpg");
+		dashboardPage.openMenuPageByPageName(driver, "Media");
+		mediaPage = PageGeneratorManager_WordPress.getMediaAdminPage(driver);
 		
-		Assert.assertTrue(mediaPage.areFilesUploadedDisplayed(driver));
+		mediaPage.clickToAddNewButton();
+		mediaPage.uploadMultipleFiles(driver, img1,img2,img3);
+		
+		Assert.assertTrue(mediaPage.areFilesUploadedDisplayed(driver, img1,img2,img3));
 	}
 	
 	public int randomNumber() {

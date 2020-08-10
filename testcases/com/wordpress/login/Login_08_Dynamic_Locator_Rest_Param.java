@@ -19,11 +19,11 @@ import Browsers_Factory.DriverManager;
 import commons.AbstractPage;
 import commons.AbstractTest;
 import commons.PageGeneratorManager_WordPress;
-import pageObjects.wordpress.DashBoardPageObject;
-import pageObjects.wordpress.LogInPageObject;
-import pageObjects.wordpress.MediaPageObject;
-import pageObjects.wordpress.PagesPageObject;
-import pageObjects.wordpress.PostsPageObject;
+import pageObjects.wordpress.admin.DashBoardPageObject;
+import pageObjects.wordpress.admin.LogInPageObject;
+import pageObjects.wordpress.admin.MediaPageObject;
+import pageObjects.wordpress.admin.PagesPageObject;
+import pageObjects.wordpress.admin.PostsPageObject;
 
 public class Login_08_Dynamic_Locator_Rest_Param extends AbstractTest {
 
@@ -86,18 +86,18 @@ public class Login_08_Dynamic_Locator_Rest_Param extends AbstractTest {
 	public void TC_03_NavigateToALotsPage() {
 		
 		
-		dashboardPage.clickToDyamicALotPagesMenu(driver, "post");
-		postsPage = PageGeneratorManager_WordPress.getPostsPage(driver);
+		dashboardPage.openMenuPageByName(driver, "post");
+		postsPage = PageGeneratorManager_WordPress.getPostsAdminPage(driver);
 		//Navigate from Post to Pages
-		postsPage.clickToDyamicALotPagesMenu(driver, "page");
+		postsPage.openMenuPageByName(driver, "page");
 		pagesPage =  PageGeneratorManager_WordPress.getPagesPage(driver);
 		
 		//Navigate from Pages to Media
-		pagesPage.clickToDyamicALotPagesMenu(driver, "media");
-		mediaPage =PageGeneratorManager_WordPress.getMediaPage(driver);
+		pagesPage.openMenuPageByName(driver, "media");
+		mediaPage =PageGeneratorManager_WordPress.getMediaAdminPage(driver);
 		
-		mediaPage.clickToDyamicALotPagesMenu(driver, "dashboard");
-		dashboardPage = PageGeneratorManager_WordPress.getDashBoardPage(driver);
+		mediaPage.openMenuPageByName(driver, "dashboard");
+		dashboardPage = PageGeneratorManager_WordPress.getDashBoardAdminPage(driver);
 		
 	}
 

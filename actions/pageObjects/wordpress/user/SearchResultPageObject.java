@@ -7,6 +7,7 @@ import commons.PageGeneratorManager_WordPress;
 import pageUI.wordpress.admin.AbstractPageUI;
 import pageUI.wordpress.admin.DashBoardPageUI;
 import pageUI.wordpress.admin.PostPageUI;
+import pageUI.wordpress.admin.SearchResultPageUI;
 
 public class SearchResultPageObject extends AbstractPage {
 	WebDriver driver;
@@ -44,6 +45,11 @@ public class SearchResultPageObject extends AbstractPage {
 	public boolean isPlansMenutUndisplayed() {
 		
 		return isElementUndisplayed(driver,AbstractPageUI.PLANS_LINK);
+	}
+
+	public boolean isPostTitleDisplayedOnHeader(String newpostTitle) {
+		waitForElementVisible(driver, SearchResultPageUI.POST_TITLE_ON_HEADER, newpostTitle);
+		return isElementDisplayed(driver, SearchResultPageUI.POST_TITLE_ON_HEADER, newpostTitle);
 	}
 
 	

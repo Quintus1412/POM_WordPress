@@ -35,6 +35,11 @@ public class PostsPageObject extends AbstractPage {
 		
 		
 	}
+	public NewEditPostsPageObject clickToPostDetailByTitle(String newPostTitle) {
+		waitForElementClickable(driver, PostPageUI.POST_TITLE_LINK,newPostTitle );
+		clickToElement(driver, PostPageUI.POST_TITLE_LINK,newPostTitle );
+		return PageGeneratorManager_WordPress.getNewEditPostsAdminPage(driver);
+	}
 
 	
 

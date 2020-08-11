@@ -23,10 +23,17 @@ import pageObjects.wordpress.user.SearchResultPageObject;
 public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 	WebDriver driver;
 	int fakeNumber = randomNumber();
-	String newPostTitle="[SESSION] New Post Title "+fakeNumber;
+	
+	String newPostTitle="[SESSION] New_Post_Title_"+fakeNumber;
 	String newPostContent="Content of Session "+fakeNumber;
 	String newPostTag="new_post_"+ fakeNumber;
-	String newPostCheckbox ="NEW LIVE CODING";
+	String newPostCategory ="NEW LIVE CODING";
+	
+	String editPostTitle="[SESSION] Edit_Post_Title_"+fakeNumber;
+	String editPostTag="edit_tag_"+ fakeNumber;
+	String editPostCategory="EDIT LIVE CODING";
+	
+	
 	
 	@Parameters({ "browser","url" })
 	@BeforeClass
@@ -63,17 +70,17 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		newEditPostAdminPage = postsAdminPage.clickToAddNewButton();
 		newEditPostAdminPage.inputToTitlePostTextbox(newPostTitle);
 		newEditPostAdminPage.inputToPostContentTextbox(newPostContent);
-		newEditPostAdminPage.selectCategoryCheckbox(newPostCheckbox);
+		newEditPostAdminPage.selectCategoryCheckbox(newPostCategory);
 		newEditPostAdminPage.inputToTagTextbox(newPostTag);
 		newEditPostAdminPage.clickToAddTagButton();
 		newEditPostAdminPage.clickToSetFeatureImage();
 		newEditPostAdminPage.clickToUploadFilesTab();
-		newEditPostAdminPage.uploadMultipleFiles(driver, feartureImage);
-		verifyTrue(newEditPostAdminPage.areFilesUploadedDisplayed(driver, feartureImage));
+		newEditPostAdminPage.uploadMultipleFiles(driver, featureImage);
+		verifyTrue(newEditPostAdminPage.areFilesUploadedDisplayed(driver, featureImage));
 		newEditPostAdminPage.clickToSetFeatureImageButton();
-		verifyTrue(newEditPostAdminPage.isFeatureImageDisplayed(feartureImage));
+		verifyTrue(newEditPostAdminPage.isFeatureImageDisplayed(featureImage));
 		
-		newEditPostAdminPage.clickToPublishButton();
+		newEditPostAdminPage.clickToPublishOrUpdateButton();
 		verifyTrue(newEditPostAdminPage.isSuccessMessageDisplayedWithValue(driver,"Post published. "));
 		
 		newEditPostAdminPage.openMenuPageByPageName(driver, "Posts");
@@ -85,35 +92,42 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		
 		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Title",newPostTitle));
 		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Author",authorName));
-		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Categories",newPostCheckbox));
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Categories",newPostCategory));
 		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Tags",newPostTag));
 	
 		//Navigate to User site
 		homeUserPage= postsAdminPage.openEndUserPage(driver);
 		
 		//Design in Abstract to re-use at search page
-		verifyTrue(homeUserPage.isPostDisplayedOnLastedPost(driver,"title","created date"));
-		verifyTrue(homeUserPage.isPostImageDisplayedAtPostTitleName(driver,"title","selenium.png"));
+		verifyTrue(homeUserPage.isPostDisplayedOnLastedPost(driver,newPostCategory,newPostTitle,getWordPressToday()));
+		verifyTrue(homeUserPage.isPostImageDisplayedAtPostTitleName(driver,newPostTitle,featureImage));
 		
 		
 		//Go_To_Post_At_User_Page
-		postDetailUserPage = homeUserPage.clickToPostDetailsWithTileName("title");
-		verifyTrue(postDetailUserPage.isCategoryNameDisplayed("categoty"));
-		verifyTrue(postDetailUserPage.isTitleDisplayed("title"));
-		verifyTrue(postDetailUserPage.isImageDisplayed("selenium.png"));
-		verifyTrue(postDetailUserPage.isContentDisplayed("Content"));
-		verifyTrue(postDetailUserPage.isDateCreatedDisplayed("Content"));
-		verifyTrue(postDetailUserPage.isAuthorDisplayed("author"));
+		log.info("Go to Post detail");
+		postDetailUserPage = homeUserPage.clickToPostDetailsWithTileName(driver, newPostTitle);
+		
+		log.info("Check the post info is correct");
+		verifyTrue(postDetailUserPage.isCategoryNameDisplayed(newPostCategory));
+		verifyTrue(postDetailUserPage.isTitleDisplayed(newPostTitle));
+		verifyTrue(postDetailUserPage.isImageDisplayed(featureImage));
+		verifyTrue(postDetailUserPage.isTagDisplayed(newPostTag));
+		verifyTrue(postDetailUserPage.isContentValueDisplayed(newPostContent));
+		verifyTrue(postDetailUserPage.isDateCreatedDisplayed(today));
+		verifyTrue(postDetailUserPage.isAuthorDisplayed(authorName));
 		
 		
 		//Search_Post_At_User_Page
-		searchResultUserPage= postDetailUserPage.inputToSearchTextboxEndUserPage(driver, "title");
-		verifyTrue(searchResultUserPage.isNewPostDisplayedOnLastedPost("category", "title","created date"));
-		verifyTrue(searchResultUserPage.isPostImageDisplayedAtPostTitleName("title","selenium.png"));
+		log.info("Search post title is existed in end user");
+		searchResultUserPage= postDetailUserPage.inputToSearchTextboxEndUserPage(driver, newPostTitle);
+		verifyTrue(searchResultUserPage.isPostTitleDisplayedOnHeader(newPostTitle));
+		verifyTrue(searchResultUserPage.isPostDisplayedOnLastedPost(driver,newPostCategory,newPostTitle,getWordPressToday()));
+		verifyTrue(searchResultUserPage.isPostImageDisplayedAtPostTitleName(driver,newPostTitle,featureImage));
 		
+//		
 	}
 	
-	
+	@Test
 	public void Post_02_Edit_Post_At_Admin_Page() {
 	//Navigate to Admin page
 		dashboardAdminPage = searchResultUserPage.openLogedinAdminPage(driver);
@@ -122,56 +136,83 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		postsAdminPage = PageGeneratorManager_WordPress.getPostsAdminPage(driver);
 		
 		//Search_Post_At_Admin_Page
-		postsAdminPage.inputToSearchTextbox("");
+		postsAdminPage.inputToSearchTextbox(newPostTitle);
 		postsAdminPage.clickToSearchButton();
-		verifyTrue(postsAdminPage.isOnlyOneRowDisplayed("title","author","category","tag"));
+		
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Title",newPostTitle));
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Author",authorName));
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Categories",newPostCategory));
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Tags",newPostTag));
 		
 		//click to post detail
-		newEditPostAdminPage = postsAdminPage.clickToPostDetailByTitle("");
+		newEditPostAdminPage = postsAdminPage.clickToPostDetailByTitle(newPostTitle);
 		
 		
 		// Edit post
-		newEditPostAdminPage.inputToTitlePostTextbox("");
-		newEditPostAdminPage.inputToPostContentTextbox("Edit_content");
-		newEditPostAdminPage.deselectCategoryCheckbox("NEW LIVE CODING");
-		newEditPostAdminPage.selectCategoryCheckbox("EDIT LIVE CODING");
-		newEditPostAdminPage.inputToTagTextbox("tag_edit_name");
-		newEditPostAdminPage.clickToAddTagButton();
-		newEditPostAdminPage.clickToDeleteTagIconWithTagName("tag_new_name");
+		log.info("Edit post in Admin");
+		newEditPostAdminPage.inputToTitlePostTextbox(editPostTitle);
 	
-		newEditPostAdminPage.clickToUpdateButton();
-		verifyTrue(newEditPostAdminPage.isSuccessMessageDisplayedWithValue("Post Updated"));
+		newEditPostAdminPage.deselectCategoryCheckbox(newPostCategory);
+		newEditPostAdminPage.selectCategoryCheckbox(editPostCategory);
+		newEditPostAdminPage.inputToTagTextbox(editPostTag);
+		newEditPostAdminPage.clickToAddTagButton();
+		newEditPostAdminPage.clickToDeleteTagIconWithTagName(newPostTag);
+	
+		newEditPostAdminPage.clickToPublishOrUpdateButton();
+		log.info("TC2: Post updated");
+		verifyTrue(newEditPostAdminPage.isSuccessMessageDisplayedWithValue(driver,"Post updated. "));
 		
+		
+		
+		//Search_Post_At_Admin_Page
+		log.info("TC2: open POst PAGE");
 		newEditPostAdminPage.openMenuPageByPageName(driver, "Posts");
 		postsAdminPage = PageGeneratorManager_WordPress.getPostsAdminPage(driver);
 		
 		//Search_Post_At_Admin_Page
-		postsAdminPage.inputToSearchTextbox("");
+		log.info("TC2: Search post after editing");
+		postsAdminPage.inputToSearchTextbox(editPostTitle);
 		postsAdminPage.clickToSearchButton();
-		verifyTrue(postsAdminPage.isOnlyOneRowDisplayed("edit_title","author","edit_category","tag_edit_name"));
-		
+		log.info("TC2: Verify after editing");
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Title",editPostTitle));
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Author",authorName));
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Categories",editPostCategory));
+		//verifyFalse(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Categories",newPostCategory));
+		verifyTrue(postsAdminPage.isRowValueDisplayedAtColumn(driver, "Tags",editPostTag));
+	
 		//Navigate to User site
+		log.info("TC2: Open end userpage and Search post after editing on end user page");
 		homeUserPage= postsAdminPage.openEndUserPage(driver);
 		
 		//Design in Abstract to re-use at search page
-		verifyTrue(homeUserPage.isNewPostDisplayedOnLastedPost("edit_title", "edit_category","created date"));
-		verifyTrue(homeUserPage.isPostImageDisplayedAtPostTitleName("title","selenium.png"));
+		verifyTrue(homeUserPage.isPostDisplayedOnLastedPost(driver,editPostCategory,editPostTitle,getWordPressToday()));
+		verifyTrue(homeUserPage.isPostImageDisplayedAtPostTitleName(driver,editPostTitle,featureImage));
 		
 		
 		//Go_To_Post_At_User_Page
-		postDetailUserPage = homeUserPage.clickToPostDetailsWithTileName("edit_title");
-		verifyTrue(postDetailUserPage.isCategoryNameDisplayed("edit_category"));
-		verifyTrue(postDetailUserPage.isTitleDisplayed("edit_title"));
-		verifyTrue(postDetailUserPage.isImageDisplayed("selenium.png"));
-		verifyTrue(postDetailUserPage.isContentDisplayed("Edit_content"));
-		verifyTrue(postDetailUserPage.isDateCreatedDisplayed("date_create"));
-		verifyTrue(postDetailUserPage.isAuthorDisplayed("author"));
+		log.info("TC2: Go to Post detail on end user page");
+		postDetailUserPage = homeUserPage.clickToPostDetailsWithTileName(driver, editPostTitle);
+		
+		log.info("TC2: Check the post info is correct");
+		verifyTrue(postDetailUserPage.isCategoryNameDisplayed(editPostCategory));
+		verifyTrue(postDetailUserPage.isCategoryNameUndisplayed(newPostCategory));
+		verifyTrue(postDetailUserPage.isTitleDisplayed(editPostTitle));
+		verifyTrue(postDetailUserPage.isTitleUndisplayed(newPostTitle));
+		verifyTrue(postDetailUserPage.isImageDisplayed(featureImage));
+		verifyTrue(postDetailUserPage.isContentValueDisplayed(newPostContent));
+		verifyTrue(postDetailUserPage.isTagDisplayed(editPostTag));
+		verifyTrue(postDetailUserPage.isTagUndisplayed(newPostTag));
+		verifyTrue(postDetailUserPage.isDateCreatedDisplayed(today));
+		verifyTrue(postDetailUserPage.isAuthorDisplayed(authorName));
 		
 		
 		//Search_Post_At_User_Page
-		searchResultUserPage= postDetailUserPage.inputToSearchTextboxEndUserPage(driver, "edit_title");
-		verifyTrue(searchResultUserPage.isNewPostDisplayedOnLastedPost("edit_category", "edit_title","created date"));
-		verifyTrue(searchResultUserPage.isPostImageDisplayedAtPostTitleName("edit_title","selenium.png"));
+		log.info("TC2: Search post title after updated is existed in end user");
+		searchResultUserPage= postDetailUserPage.inputToSearchTextboxEndUserPage(driver, editPostTitle);
+		verifyTrue(searchResultUserPage.isPostTitleDisplayedOnHeader(editPostTitle));
+		verifyTrue(searchResultUserPage.isPostDisplayedOnLastedPost(driver,editPostCategory,editPostTitle,getWordPressToday()));
+		verifyTrue(searchResultUserPage.isPostImageDisplayedAtPostTitleName(driver,editPostTitle,featureImage));
+
 	}
 
 	
@@ -183,7 +224,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		postsAdminPage = PageGeneratorManager_WordPress.getPostsAdminPage(driver);
 		
 		//Search_Post_At_Admin_Page
-		postsAdminPage.inputToSearchTextbox("edit_title");
+		postsAdminPage.inputToSearchTextbox(editPostTitle);
 		postsAdminPage.clickToSearchButton();
 		verifyTrue(postsAdminPage.isOnlyOneRowDisplayed("edit_title","author","edit_category","tag_edit_name"));
 		
@@ -195,7 +236,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		postsAdminPage.inputToSearchTextbox("edit_title");
 		postsAdminPage.clickToSearchButton();
 		
-		//delete post is undisplayed
+		//deleted post is undisplayed
 		verifyFalse(postsAdminPage.isOnlyOneRowDisplayed("edit_title","author","edit_category","tag_edit_name"));
 		verifyTrue(postsAdminPage.isNoPostFoundDisplayed("No post found"));
 		
@@ -220,8 +261,9 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		//closeBrowserAndDriver(driver);
 	}
 	
-	String feartureImage = "Selenium.jpg";
+	String featureImage = "selenium.jpg";
 	String authorName= "Automation FC";
+	String today= getWordPressToday();
 	
 	LogInPageObject loginAdminPage;
 	DashBoardPageObject dashboardAdminPage;

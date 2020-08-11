@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -56,7 +58,7 @@ public abstract class AbstractTest {
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(GlobalConstants.WORD_PRESS_URL);
+		driver.get(GlobalConstants.ADMIN_WORD_PRESS_URL);
 		return driver;
 	}
 
@@ -178,6 +180,41 @@ public abstract class AbstractTest {
 		} catch (Exception e) {
 			log.info(e.getMessage());
 		}
+	}
+	
+	protected String getCurrentDay() {
+		//DateTime nowUTC = new DateTime(DateTimeZone.UTC);
+		DateTime nowUTC = new DateTime();
+		int day = nowUTC.getDayOfMonth();
+		if (day < 10) {
+			String dayValue = "0" + day;
+			return dayValue;
+		}
+		//cast to String
+		return String.valueOf(day);
+	}
+
+	protected String getCurrentMonth() {
+		DateTime now = new DateTime();
+		int month = now.getMonthOfYear();
+		if (month < 10) {
+			String monthValue = "0" + month;
+			return monthValue;
+		}
+		//cast to String
+		return String.valueOf(month);
+	}
+
+	protected String getCurrentYear() {
+		DateTime now = new DateTime();
+		return String.valueOf(now.getYear());
+	}
+
+	protected String getWordPressToday() {
+		return getCurrentDay()+"/"+ getCurrentMonth() +"/"+ getCurrentYear() ;
+	}
+	protected String getToda() {
+		return getCurrentYear() + "-" + getCurrentMonth() + "-" + getCurrentDay();
 	}
 
 }

@@ -19,17 +19,6 @@ public class HomePageObject extends AbstractPage {
 
 	
 
-	public PostDetailsPageObject clickToPostDetailsWithTileName(String string) {
-		
-		return PageGeneratorManager_WordPress.getPostDetailUserPage(driver);
-	}
-
-
-
-	
-
-
-
 	
 
 	

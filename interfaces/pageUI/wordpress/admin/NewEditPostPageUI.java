@@ -15,7 +15,8 @@ public class NewEditPostPageUI {
 	public static final String UPLOAD_FILE_BUTTON_TAB = "//button[@id='menu-item-upload']";
 	public static final String SET_FEATURE_IMAGE_BUTTON = "//button[text()='Set featured image']";
 	public static final String FEATURE_IMAGE_THUMBNAIL = "//a[@id='set-post-thumbnail']/img[contains(@src,'%s')]";
-	public static final String PUBLISH_BUTTON = "//input[@id='publish']";
+	public static final String PUBLISH_OR_UPDATE_BUTTON = "//input[@id='publish']";
+	public static final String DELETE_TAG_NAME_ICON = "//span[@class='screen-reader-text' and contains(text(),'%s')]/ancestor::button";
 	
 	
 	

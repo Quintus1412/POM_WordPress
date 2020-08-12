@@ -647,19 +647,35 @@ public abstract class AbstractPage {
 		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
 	}
 	
+	public boolean isRowValueUndisplayedAtColumn(WebDriver driver,  String columnName,String rowValue) {
+				return isElementUndisplayed(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
+	}
+	
 
 	public boolean isPostDisplayedOnLastedPost(WebDriver driver,String categoriesName, String postTitle, String dateCreated) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE,categoriesName,postTitle,dateCreated  );
 		return isElementDisplayed(driver,AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE,categoriesName,postTitle,dateCreated);
 	}
 	
-	public boolean isPostImageDisplayedAtPostTitleName(WebDriver driver, String postTitle, String avatarImageName) {
-		waitForJStoLoad(driver);
-		avatarImageName = avatarImageName.split("\\.")[0];
+	public boolean isPostUndisplayedOnLastedPost(WebDriver driver,String categoriesName, String postTitle, String dateCreated) {
+		
+		return isElementUndisplayed(driver,AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE,categoriesName,postTitle,dateCreated);
+	}
 	
+	public boolean isPostImageDisplayedAtPostTitleName(WebDriver driver, String postTitle, String avatarImageName) {
+		//waitForJStoLoad(driver);
+		avatarImageName = avatarImageName.split("\\.")[0];
+		
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle,avatarImageName);
 		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle, avatarImageName)
 				&& isImageLoaded(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle,avatarImageName);
+	}
+	
+	public boolean isPostImageUndisplayedAtPostTitleName(WebDriver driver, String postTitle, String avatarImageName) {
+		//waitForJStoLoad(driver);
+		avatarImageName = avatarImageName.split("\\.")[0];
+		return isElementUndisplayed(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle, avatarImageName);
+				
 	}
 	
 public PostDetailsPageObject clickToPostDetailsWithTileName(WebDriver driver,String postTitle) {

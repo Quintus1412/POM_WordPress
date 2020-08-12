@@ -6,6 +6,7 @@ import commons.AbstractPage;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager_WordPress;
 import pageUI.jquery.DataTableJQueryUI;
+import pageUI.wordpress.admin.AbstractPageUI;
 import pageUI.wordpress.admin.PagesPageUI;
 import pageUI.wordpress.admin.PostPageUI;
 
@@ -39,6 +40,10 @@ public class PostsPageObject extends AbstractPage {
 		waitForElementClickable(driver, PostPageUI.POST_TITLE_LINK,newPostTitle );
 		clickToElement(driver, PostPageUI.POST_TITLE_LINK,newPostTitle );
 		return PageGeneratorManager_WordPress.getNewEditPostsAdminPage(driver);
+	}
+	public boolean isNoPostFoundDisplayed(String noResultFoundText) {
+		waitForElementVisible(driver, AbstractPageUI.NO_SEARCH_RESULT_TEXT, noResultFoundText);
+		return isElementDisplayed(driver, AbstractPageUI.NO_SEARCH_RESULT_TEXT, noResultFoundText);
 	}
 
 	

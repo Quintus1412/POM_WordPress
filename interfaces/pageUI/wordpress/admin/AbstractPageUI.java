@@ -24,6 +24,7 @@ public class AbstractPageUI {
 	public static final String SEARCH_ICON ="//a[@class='search-toggle']";	
 	public static final String SEARCH_FIELD ="//input[@class='search-field']";	
 	public static final String INPUT_SEARCH_ICON ="//span[@class='fa fw fa-search']";	
+	public static final String NO_SEARCH_RESULT_TEXT ="//tr[@class='no-items']/td[text()='%s']";	
 	
 	}
 

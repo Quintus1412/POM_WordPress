@@ -51,6 +51,10 @@ public class SearchResultPageObject extends AbstractPage {
 		waitForElementVisible(driver, SearchResultPageUI.POST_TITLE_ON_HEADER, newpostTitle);
 		return isElementDisplayed(driver, SearchResultPageUI.POST_TITLE_ON_HEADER, newpostTitle);
 	}
+	public boolean isPostTitleUndisplayedOnHeader(String editpostTitle) {
+		
+		return isElementUndisplayed(driver, SearchResultPageUI.POST_TITLE_ON_HEADER, editpostTitle);
+	}
 
 	
 

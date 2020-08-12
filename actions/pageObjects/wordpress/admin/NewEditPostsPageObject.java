@@ -26,7 +26,8 @@ public class NewEditPostsPageObject extends AbstractPage  {
 	}
 
 	public PostsPageObject clicktoMoveToTrashButon() {
-		// TODO Auto-generated method stub
+		waitForElementVisible(driver, NewEditPostPageUI.MOVE_TO_TRASH_LINK);
+		clickToElement(driver, NewEditPostPageUI.MOVE_TO_TRASH_LINK);
 		return PageGeneratorManager_WordPress.getPostsAdminPage(driver);
 	}
 	

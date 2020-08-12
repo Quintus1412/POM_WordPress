@@ -17,6 +17,7 @@ public class NewEditPostPageUI {
 	public static final String FEATURE_IMAGE_THUMBNAIL = "//a[@id='set-post-thumbnail']/img[contains(@src,'%s')]";
 	public static final String PUBLISH_OR_UPDATE_BUTTON = "//input[@id='publish']";
 	public static final String DELETE_TAG_NAME_ICON = "//span[@class='screen-reader-text' and contains(text(),'%s')]/ancestor::button";
+	public static final String MOVE_TO_TRASH_LINK = "//a[@class='submitdelete deletion']";
 	
 	
 	

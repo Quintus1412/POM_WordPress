@@ -64,8 +64,10 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		// New Post
 		dashboardAdminPage.openMenuPageByPageName(driver, "Posts");
 		postsAdminPage = PageGeneratorManager_WordPress.getPostsAdminPage(driver);
-
+		showBrowserConsoleLog(driver);
 		newEditPostAdminPage = postsAdminPage.clickToAddNewButton();
+		showBrowserConsoleLog(driver);
+		
 		newEditPostAdminPage.inputToTitlePostTextbox(newPostTitle);
 		newEditPostAdminPage.inputToPostContentTextbox(newPostContent);
 		newEditPostAdminPage.selectCategoryCheckbox(newPostCategory);
@@ -83,7 +85,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 
 		newEditPostAdminPage.openMenuPageByPageName(driver, "Posts");
 		postsAdminPage = PageGeneratorManager_WordPress.getPostsAdminPage(driver);
-
+		showBrowserConsoleLog(driver);
 		// Search_Post_At_Admin_Page
 		postsAdminPage.inputToSearchTextbox(newPostTitle);
 		postsAdminPage.clickToSearchButton();
@@ -95,7 +97,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 
 		// Navigate to User site
 		homeUserPage = postsAdminPage.openEndUserPage(driver);
-
+		showBrowserConsoleLog(driver);
 		// Design in Abstract to re-use at search page
 		verifyTrue(homeUserPage.isPostDisplayedOnLastedPost(driver, newPostCategory, newPostTitle, getWordPressToday()));
 		verifyTrue(homeUserPage.isPostImageDisplayedAtPostTitleName(driver, newPostTitle, featureImage));
@@ -103,7 +105,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		// Go_To_Post_At_User_Page
 		log.info("Go to Post detail");
 		postDetailUserPage = homeUserPage.clickToPostDetailsWithTileName(driver, newPostTitle);
-
+		showBrowserConsoleLog(driver);
 		log.info("Check the post info is correct");
 		verifyTrue(postDetailUserPage.isCategoryNameDisplayed(newPostCategory));
 		verifyTrue(postDetailUserPage.isTitleDisplayed(newPostTitle));
@@ -123,7 +125,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		//
 	}
 
-	@Test
+	
 	public void Post_02_Edit_Post_At_Admin_Page() {
 		// Navigate to Admin page
 		dashboardAdminPage = searchResultUserPage.openLogedinAdminPage(driver);
@@ -205,7 +207,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		verifyTrue(searchResultUserPage.isPostImageDisplayedAtPostTitleName(driver, editPostTitle, featureImage));
 	}
 
-	@Test
+	
 	public void Post_03_Delete_Post_At_User_Page() {
 		dashboardAdminPage = searchResultUserPage.openLogedinAdminPage(driver);
 
@@ -266,7 +268,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 	@AfterClass
 	public void afterClass() {
 		log.info("Post-condition - Close browser");
-		// closeBrowserAndDriver(driver);
+		closeBrowserAndDriver(driver);
 	}
 
 	String featureImage = "selenium.jpg";

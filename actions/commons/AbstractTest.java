@@ -1,23 +1,28 @@
 package commons;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
 import org.testng.Assert;
 import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageUI.wordpress.admin.AbstractPageUI;
-import pageUI.wordpress.admin.PostPageUI;
 
 public abstract class AbstractTest {
 	private WebDriver driver;
@@ -30,13 +35,40 @@ public abstract class AbstractTest {
 	}
 	protected WebDriver getBrowserDriver(String browserName) {
 		if (browserName.equalsIgnoreCase("firefox")) {
-			// WebDriverManager.firefoxdriver().version("70.0.0").setup();
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("-private");
+		
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.BROWSER_LOG_FOLDER+"\\Firefox"+getDateTime()+".log");
+			driver = new FirefoxDriver(options);
+			//add extension 
+//			FirefoxProfile profile= new FirefoxProfile();
+//			File translate = new File(GlobalConstants.BROWSER_EXTENSIONS_FOLDER+"\\to_google_translate-4.0.6-fx.xpi");
+//			profile.addExtension(translate);
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.setProfile(profile);
+//			driver = new FirefoxDriver(options);
+			
+			
+		} else if (browserName.equalsIgnoreCase("firefox_headless")) {
+			FirefoxOptions options= new FirefoxOptions();
+			options.setHeadless(true);
+			driver = new FirefoxDriver(options);
+			
 		} else if (browserName.equalsIgnoreCase("chrome")) {
 
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--incognito");
+		
+			driver = new ChromeDriver(options);
+			//add extendsion for chrome
+//			File file = new File(GlobalConstants.BROWSER_EXTENSIONS_FOLDER+"\\extension_2_0_9_0.crx");
+//			ChromeOptions options = new ChromeOptions();
+//			options.addExtensions(file);
+//			driver = new ChromeDriver(options);
+			
 		} else if (browserName.equalsIgnoreCase("chrome_headless")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
@@ -48,9 +80,10 @@ public abstract class AbstractTest {
 
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			
 		} else if (browserName.equalsIgnoreCase("ie")) {
-			WebDriverManager.iedriver().arch64().setup();
-			driver = new EdgeDriver();
+			WebDriverManager.iedriver().arch32().setup();
+			driver = new InternetExplorerDriver();
 
 		} else {
 			System.out.print("Browser not found");
@@ -64,13 +97,34 @@ public abstract class AbstractTest {
 
 	public WebDriver getBrowserDriver(String browserName, String appUrl) {
 		if (browserName.equalsIgnoreCase("firefox")) {
-			// WebDriverManager.firefoxdriver().version("70.0.0").setup();
 			WebDriverManager.firefoxdriver().setup();
+			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.BROWSER_LOG_FOLDER+"\\Firefox"+getDateTime()+".log");
 			driver = new FirefoxDriver();
+			//add extension 
+//			FirefoxProfile profile= new FirefoxProfile();
+//			File translate = new File(GlobalConstants.BROWSER_EXTENSIONS_FOLDER+"\\to_google_translate-4.0.6-fx.xpi");
+//			profile.addExtension(translate);
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.setProfile(profile);
+//			driver = new FirefoxDriver(options);
+			
+			
+		} else if (browserName.equalsIgnoreCase("firefox_headless")) {
+			FirefoxOptions options= new FirefoxOptions();
+			options.setHeadless(true);
+			driver = new FirefoxDriver(options);
+			
 		} else if (browserName.equalsIgnoreCase("chrome")) {
 
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			//add extendsion for chrome
+//			File file = new File(GlobalConstants.BROWSER_EXTENSIONS_FOLDER+"\\extension_2_0_9_0.crx");
+//			ChromeOptions options = new ChromeOptions();
+//			options.addExtensions(file);
+//			driver = new ChromeDriver(options);
+			
 		} else if (browserName.equalsIgnoreCase("chrome_headless")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
@@ -79,12 +133,12 @@ public abstract class AbstractTest {
 			driver =new ChromeDriver(options);
 
 		} else if (browserName.equalsIgnoreCase("edge")) {
-
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			
 		} else if (browserName.equalsIgnoreCase("ie")) {
-			WebDriverManager.iedriver().arch64().setup();
-			driver = new EdgeDriver();
+			WebDriverManager.iedriver().arch32().setup();
+			driver = new InternetExplorerDriver();
 
 		} else {
 			System.out.print("Browser not found");
@@ -215,6 +269,23 @@ public abstract class AbstractTest {
 	}
 	protected String getToda() {
 		return getCurrentYear() + "-" + getCurrentMonth() + "-" + getCurrentDay();
+	}
+	
+	protected void showBrowserConsoleLog(WebDriver driver) {
+		if(driver.toString().contains("chrome")) {
+			LogEntries logs = driver.manage().logs().get("browser");
+			List<LogEntry> logList = logs.getAll();
+			for (LogEntry logging:logList) {
+				System.out.println("---------------------"+logging.getLevel().toString()+"---------------------------\n"+logging.getMessage());
+			}
+			
+		}
+	}
+	
+	protected String getDateTime() {
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
+		Date date = new Date();
+		return format.format(date).replace(":", "-").replace(" ", "-");
 	}
 
 }

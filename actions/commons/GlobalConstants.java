@@ -3,7 +3,8 @@ package commons;
 public class GlobalConstants {
 
 	public static String ROOT_FOLDER =System.getProperty("user.dir");
-	public static String BROWSER_LOG_FOLDER =".\\browserLog";
+	public static String BROWSER_LOG_FOLDER =ROOT_FOLDER+ "\\browserLog";
+	public static String BROWSER_EXTENSIONS_FOLDER =ROOT_FOLDER+"\\extensions";
 	public static String UPLOAD_FOLDER = ROOT_FOLDER+"\\uploadFiles\\";
 	public static String DOWNLOAD_FOLDER = ROOT_FOLDER+"\\downloadFiles\\";
 	

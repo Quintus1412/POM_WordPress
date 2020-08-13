@@ -1,6 +1,8 @@
 package commons;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -124,6 +126,190 @@ public abstract class AbstractPage {
 
 	}
 
+	public boolean isDataSortedAscending(WebDriver driver, String locator) {
+		// Khai báo 1Array List
+		ArrayList<String> arrayList = new ArrayList<String>();
+
+		// Tìm tất cả element matching VS điều kiện (Name/ Price/..)
+		List<WebElement> elementList = findElementsByXpath(driver,locator);
+
+		// Lấy text của từng element add vào Array List
+		for (WebElement element : elementList) {
+			arrayList.add(element.getText());
+		}
+
+		System.out.println(" ------------ Dữ liệu trên UI: ------------ ");
+		for (String name : arrayList) {
+			System.out.println(name);
+		}
+
+		// Copy qua 1 array list mới để SORT trong Code
+		ArrayList<String> sortedList = new ArrayList<>();
+		for (String child : arrayList) {
+			sortedList.add(child);
+		}
+		// Thực hiện SORT ASC
+		Collections.sort(sortedList);
+
+		System.out.println(" ------------ Dữ liệu đã SORT ASC trong Code: ------------ ");
+		for (String name : sortedList) {
+			System.out.println(name);
+		}
+		// Verify 2 array bằng nhau - nếu dữ liệu sort trên UI ko chính xác thì kết quả trả về sai
+		return sortedList.equals(arrayList);
+	}
+
+	public boolean isDataSortedDescending(WebDriver driver, String locator) {
+		// Khai báo 1Array List
+		ArrayList<String> arrayList = new ArrayList<String>();
+
+		// Tìm tất cả element matching VS điều kiện (Name/ Price/..)
+		List<WebElement> elementList = findElementsByXpath(driver,locator);
+
+		// Lấy text của từng element add vào Array List
+		for (WebElement element : elementList) {
+			arrayList.add(element.getText());
+		}
+
+		System.out.println(" ------------ Dữ liệu trên UI: ------------ ");
+		for (String name : arrayList) {
+			System.out.println(name);
+		}
+
+		// Copy qua 1 array list mới để SORT trong Code
+		ArrayList<String> sortedList = new ArrayList<>();
+		for (String child : arrayList) {
+			sortedList.add(child);
+		}
+		// Thực hiện SORT ASC
+		Collections.sort(arrayList);
+
+		System.out.println(" ------------ Dữ liệu đã SORT ASC trong Code: ------------ ");
+		for (String name : arrayList) {
+			System.out.println(name);
+		}
+		// Reverse data to sort DESC 
+		Collections.reverse(arrayList);
+		
+		System.out.println(" ------------ Dữ liệu đã SORT DES trong Code: ------------ ");
+		for (String name : arrayList) {
+			System.out.println(name);
+		}
+		
+		
+		// Verify 2 array bằng nhau - nếu dữ liệu sort trên UI ko chính xác thì kết quả trả về sai
+		return sortedList.equals(arrayList);
+	}
+	
+	public boolean isDateSortedAscending(WebDriver driver, String locator) {
+		// Khai báo 1Array List
+		ArrayList<Date> arrayList = new ArrayList<Date>();
+
+		// Tìm tất cả element matching VS điều kiện (Name/ Price/..)
+		List<WebElement> elementList = findElementsByXpath(driver,locator);
+
+		// Lấy text của từng element add vào Array List
+		for (WebElement element : elementList) {
+			arrayList.add(Date.parse(element.getText().replace("/", "").trim()));
+
+		System.out.println(" ------------ Dữ liệu trên UI: ------------ ");
+		for (Date name : arrayList) {
+			System.out.println(name);
+		}
+
+		// Copy qua 1 array list mới để SORT trong Code
+		ArrayList<Date> sortedList = new ArrayList<>();
+		for (Date child : arrayList) {
+			sortedList.add(child);
+		}
+		// Thực hiện SORT ASC
+		Collections.sort(sortedList);
+
+		System.out.println(" ------------ Dữ liệu đã SORT ASC trong Code: ------------ ");
+		for (Date name : sortedList) {
+			System.out.println(name);
+		}
+		// Verify 2 array bằng nhau - nếu dữ liệu sort trên UI ko chính xác thì kết quả trả về sai
+		return sortedList.equals(arrayList);
+	}
+
+	
+	
+	public boolean isPriceSortedAscending(WebDriver driver, String locator) {
+		// Khai báo 1Array List
+		ArrayList<Float> arrayList = new ArrayList<Float>();
+
+		// Tìm tất cả element matching VS điều kiện (Name/ Price/..)
+		List<WebElement> elementList = findElementsByXpath(driver,locator);
+
+		// Lấy text của từng element add vào Array List
+		for (WebElement element : elementList) {
+			arrayList.add(Float.parseFloat(element.getText().replace("$", "").trim()));
+		}
+
+		System.out.println(" ------------ Dữ liệu trên UI: ------------ ");
+		for (Float name : arrayList) {
+			System.out.println(name);
+		}
+
+		// Copy qua 1 array list mới để SORT trong Code
+		ArrayList<Float> sortedList = new ArrayList<>();
+		for (Float child : arrayList) {
+			sortedList.add(child);
+		}
+		// Thực hiện SORT ASC
+		Collections.sort(sortedList);
+
+		System.out.println(" ------------ Dữ liệu đã SORT ASC trong Code: ------------ ");
+		for (Float name : sortedList) {
+			System.out.println(name);
+		}
+		// Verify 2 array bằng nhau - nếu dữ liệu sort trên UI ko chính xác thì kết quả trả về sai
+		return sortedList.equals(arrayList);
+	}
+
+	public boolean isPriceSortedDescending(WebDriver driver, String locator) {
+		// Khai báo 1Array List
+		ArrayList<Float> arrayList = new ArrayList<Float>();
+
+		// Tìm tất cả element matching VS điều kiện (Name/ Price/..)
+		List<WebElement> elementList = findElementsByXpath(driver,locator);
+
+		// Lấy text của từng element add vào Array List
+		for (WebElement element : elementList) {
+			arrayList.add(Float.parseFloat(element.getText().replace("$", "").trim()));
+		}
+
+		System.out.println(" ------------ Dữ liệu trên UI: ------------ ");
+		for (Float name : arrayList) {
+			System.out.println(name);
+		}
+
+		// Copy qua 1 array list mới để SORT trong Code
+		ArrayList<Float> sortedList = new ArrayList<>();
+		for (Float child : arrayList) {
+			sortedList.add(child);
+		}
+		// Thực hiện SORT ASC
+		Collections.sort(sortedList);
+
+		System.out.println(" ------------ Dữ liệu đã SORT ASC trong Code: ------------ ");
+		for (Float name : sortedList) {
+			System.out.println(name);
+		}
+		// Reverse data to sort DESC 
+		Collections.reverse(sortedList);
+		
+		System.out.println(" ------------ Dữ liệu đã SORT DES trong Code: ------------ ");
+		for (Float name : sortedList) {
+			System.out.println(name);
+		}
+		
+		
+		// Verify 2 array bằng nhau - nếu dữ liệu sort trên UI ko chính xác thì kết quả trả về sai
+		return sortedList.equals(arrayList);
+	}
+	
 	public By byXpath(String locator) {
 		return By.xpath(locator);
 	}
@@ -139,12 +325,23 @@ public abstract class AbstractPage {
 	}
 
 	public void clickToElement(WebDriver driver, String locator) {
+		if(driver.toString().contains("internet explorer")) {
+			clickToElementByJS(driver, locator);
+			sleepInSecond(4);
+		}
+		else {
 		findElementByXpath(driver, locator).click();
+		}
 	}
 
 	public void clickToElement(WebDriver driver, String locator, String... values) {
-
+		if(driver.toString().contains("internet explorer")) {
+			clickToElementByJS(driver, castToObject(locator, values));
+			sleepInSecond(4);
+		}
+		else {
 		findElementByXpath(driver, castToObject(locator, values)).click();
+		}
 	}
 
 	public String castToObject(String locator, String... values) {
@@ -182,7 +379,7 @@ public abstract class AbstractPage {
 		return select.getFirstSelectedOption().getText();
 	}
 
-	public void uploadMultipleFiles(WebDriver driver, String...fileNames) {
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
 		String fullFileName = "";
 		for (String file : fileNames) {
 			fullFileName = fullFileName + GlobalConstants.UPLOAD_FOLDER + file + "\n";
@@ -241,7 +438,8 @@ public abstract class AbstractPage {
 			element.click();
 		}
 	}
-	public void checkToCheckbox(WebDriver driver, String locator, String...values) {
+
+	public void checkToCheckbox(WebDriver driver, String locator, String... values) {
 		element = findElementByXpath(driver, castToObject(locator, values));
 		if (!element.isSelected()) {
 			element.click();
@@ -254,7 +452,8 @@ public abstract class AbstractPage {
 			element.click();
 		}
 	}
-	public void uncheckToCheckbox(WebDriver driver, String locator, String...values) {
+
+	public void uncheckToCheckbox(WebDriver driver, String locator, String... values) {
 		element = findElementByXpath(driver, castToObject(locator, values));
 		if (element.isSelected()) {
 			element.click();
@@ -367,7 +566,7 @@ public abstract class AbstractPage {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
-	
+
 	public void scrollToTopPage(WebDriver driver) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("window.scrollBy(0,0)");
@@ -395,7 +594,7 @@ public abstract class AbstractPage {
 		element = findElementByXpath(driver, locator);
 		jsExecutor.executeScript("arguments[0].click();", element);
 	}
-	
+
 	public void clickToElementByJS(WebDriver driver, String locator, String... values) {
 		jsExecutor = (JavascriptExecutor) driver;
 		element = findElementByXpath(driver, castToObject(locator, values));
@@ -406,8 +605,8 @@ public abstract class AbstractPage {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", findElementByXpath(driver, locator));
 	}
-	
-	public void scrollToElement(WebDriver driver, String locator, String...values) {
+
+	public void scrollToElement(WebDriver driver, String locator, String... values) {
 		jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", findElementByXpath(driver, castToObject(locator, values)));
 	}
@@ -433,8 +632,8 @@ public abstract class AbstractPage {
 		}
 		return false;
 	}
-	
-	public boolean isImageLoaded(WebDriver driver, String locator, String...values) {
+
+	public boolean isImageLoaded(WebDriver driver, String locator, String... values) {
 		jsExecutor = (JavascriptExecutor) driver;
 		element = findElementByXpath(driver, castToObject(locator, values));
 		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != 'undefined\' && arguments[0].naturalWidth >0", element);
@@ -443,35 +642,33 @@ public abstract class AbstractPage {
 		}
 		return false;
 	}
-	
+
 	public boolean waitForJStoLoad(WebDriver driver) {
 		jsExecutor = (JavascriptExecutor) driver;
-	    explicitWait  = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
 
-	    // wait for jQuery to load
-	    ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
-	      @Override
-	      public Boolean apply(WebDriver driver) {
-	        try {
-	          return ((Long)jsExecutor.executeScript("return jQuery.active") == 0);
-	        }
-	        catch (Exception e) {
-	          return true;
-	        }
-	      }
-	    };
+		// wait for jQuery to load
+		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				try {
+					return ((Long) jsExecutor.executeScript("return jQuery.active") == 0);
+				} catch (Exception e) {
+					return true;
+				}
+			}
+		};
 
-	    // wait for Javascript to load
-	    ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
-	      @Override
-	      public Boolean apply(WebDriver driver) {
-	        return jsExecutor.executeScript("return document.readyState").toString().equals("complete");
-	      }
-	    };
+		// wait for Javascript to load
+		ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				return jsExecutor.executeScript("return document.readyState").toString().equals("complete");
+			}
+		};
 
-	  return explicitWait.until(jQueryLoad) && explicitWait.until(jsLoad);
+		return explicitWait.until(jQueryLoad) && explicitWait.until(jsLoad);
 	}
- 
 
 	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
 		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
@@ -520,11 +717,11 @@ public abstract class AbstractPage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(castToObject(locator, values))));
 	}
 
-	public boolean areFilesUploadedDisplayed(WebDriver driver,String...fileNames) {
+	public boolean areFilesUploadedDisplayed(WebDriver driver, String... fileNames) {
 		boolean status = false;
 		int number = fileNames.length;
 
-		System.out.println("the number of file is "+number);
+		System.out.println("the number of file is " + number);
 		waitForElementsInvisible(driver, AbstractPageUI.UPLOADING_PROGRESS_ICON);
 		sleepInSecond(5);
 
@@ -637,50 +834,48 @@ public abstract class AbstractPage {
 		return PageGeneratorManager_WordPress.getSearchResultUserPage(driver);
 	}
 
-	public boolean isSuccessMessageDisplayedWithValue(WebDriver driver,String messageValue) {
+	public boolean isSuccessMessageDisplayedWithValue(WebDriver driver, String messageValue) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_SUCCESS_MESSAGE_ON_POST_OR_PAGES_PAGE, messageValue);
 		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_SUCCESS_MESSAGE_ON_POST_OR_PAGES_PAGE, messageValue);
 	}
-	
-	public boolean isRowValueDisplayedAtColumn(WebDriver driver,  String columnName,String rowValue) {
+
+	public boolean isRowValueDisplayedAtColumn(WebDriver driver, String columnName, String rowValue) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
 		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
 	}
-	
-	public boolean isRowValueUndisplayedAtColumn(WebDriver driver,  String columnName,String rowValue) {
-				return isElementUndisplayed(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
-	}
-	
 
-	public boolean isPostDisplayedOnLastedPost(WebDriver driver,String categoriesName, String postTitle, String dateCreated) {
-		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE,categoriesName,postTitle,dateCreated  );
-		return isElementDisplayed(driver,AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE,categoriesName,postTitle,dateCreated);
+	public boolean isRowValueUndisplayedAtColumn(WebDriver driver, String columnName, String rowValue) {
+		return isElementUndisplayed(driver, AbstractPageUI.DYNAMIC_ROW_VALUE_AT_COLUM_NAME, columnName, rowValue);
 	}
-	
-	public boolean isPostUndisplayedOnLastedPost(WebDriver driver,String categoriesName, String postTitle, String dateCreated) {
-		
-		return isElementUndisplayed(driver,AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE,categoriesName,postTitle,dateCreated);
+
+	public boolean isPostDisplayedOnLastedPost(WebDriver driver, String categoriesName, String postTitle, String dateCreated) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE, categoriesName, postTitle, dateCreated);
+		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE, categoriesName, postTitle, dateCreated);
 	}
-	
+
+	public boolean isPostUndisplayedOnLastedPost(WebDriver driver, String categoriesName, String postTitle, String dateCreated) {
+
+		return isElementUndisplayed(driver, AbstractPageUI.DYNAMIC_POST_WITH_CATEGORY_TITLE_DATE, categoriesName, postTitle, dateCreated);
+	}
+
 	public boolean isPostImageDisplayedAtPostTitleName(WebDriver driver, String postTitle, String avatarImageName) {
-		//waitForJStoLoad(driver);
+		// waitForJStoLoad(driver);
 		avatarImageName = avatarImageName.split("\\.")[0];
-		
-		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle,avatarImageName);
-		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle, avatarImageName)
-				&& isImageLoaded(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle,avatarImageName);
+
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle, avatarImageName);
+		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle, avatarImageName) && isImageLoaded(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle, avatarImageName);
 	}
-	
+
 	public boolean isPostImageUndisplayedAtPostTitleName(WebDriver driver, String postTitle, String avatarImageName) {
-		//waitForJStoLoad(driver);
+		// waitForJStoLoad(driver);
 		avatarImageName = avatarImageName.split("\\.")[0];
 		return isElementUndisplayed(driver, AbstractPageUI.DYNAMIC_POST_AVATAR_IMAGE_BY_TITLE, postTitle, avatarImageName);
-				
+
 	}
-	
-public PostDetailsPageObject clickToPostDetailsWithTileName(WebDriver driver,String postTitle) {
-	waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_TITLE, postTitle);
-	clickToElementByJS(driver, AbstractPageUI.DYNAMIC_POST_TITLE, postTitle);
+
+	public PostDetailsPageObject clickToPostDetailsWithTileName(WebDriver driver, String postTitle) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_POST_TITLE, postTitle);
+		clickToElementByJS(driver, AbstractPageUI.DYNAMIC_POST_TITLE, postTitle);
 		return PageGeneratorManager_WordPress.getPostDetailUserPage(driver);
 	}
 	// Common Funtion of BANK GURU PROJECT

@@ -31,7 +31,7 @@ public class Login_05_Multi_Browser_parallel extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
+		//loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
 		loginPageUrl = loginPage.getLoginPageUrl();
 		
 	}

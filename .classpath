@@ -46,5 +46,11 @@
 	<classpathentry kind="lib" path="libDriverManager/jarchivelib-1.0.0.jar"/>
 	<classpathentry kind="lib" path="libDriverManager/jsoup-1.11.3.jar"/>
 	<classpathentry kind="lib" path="libDriverManager/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="libFaker/generex-1.0.2.jar"/>
+	<classpathentry kind="lib" path="libFaker/javafaker-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libFaker/snakeyaml-1.23.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-annotations-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-core-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-databind-2.10.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

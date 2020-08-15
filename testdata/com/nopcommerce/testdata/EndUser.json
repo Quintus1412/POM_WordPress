@@ -1,0 +1,14 @@
+{
+	"Register": {
+		"firstname": "quintus",
+		"lastname": "dang",
+		"company": "autotets",
+		"email": "automation",
+		"dob": "02/02/1995",
+		"password": "123456789"
+	},
+	"Login": {
+		"username": "automation",
+		"password": "123456"
+	}
+}

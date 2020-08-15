@@ -36,13 +36,13 @@ public class JQuery_02_DataTable extends AbstractTest {
 
 	DriverManager driverManager;
 
-	@Parameters({ "browser" })
+	@Parameters({ "browser","url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driverManager = BrowserDriverFactory.getDriverManager(browserName);
+	public void beforeClass(String browserName, String appUrl) {
+		//driverManager = BrowserDriverFactory.getDriverManager(browserName);
 		/// driver = 1234-56245-145-6524
-		driver = driverManager.getDriver();	
-		// Open URL -> navigate to login page
+		driver = getBrowserDriver(browserName, appUrl);
+
 		datatablePage = PageGeneratorManager_JQuery.getJQueryPage(driver);
 	}
 

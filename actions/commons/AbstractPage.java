@@ -210,7 +210,8 @@ public abstract class AbstractPage {
 
 		// Lấy text của từng element add vào Array List
 		for (WebElement element : elementList) {
-			arrayList.add(Date.parse(element.getText().replace("/", "").trim()));
+            //arrayList.add(Date.parse(element.getText().replace("/", "").trim()));
+        }
 
 		System.out.println(" ------------ Dữ liệu trên UI: ------------ ");
 		for (Date name : arrayList) {
@@ -235,7 +236,7 @@ public abstract class AbstractPage {
 
 	
 	
-	public boolean isPriceSortedAscending(WebDriver driver, String locator) {
+	public boolean isPriceSortedAscending (WebDriver driver, String locator) {
 		// Khai báo 1Array List
 		ArrayList<Float> arrayList = new ArrayList<Float>();
 
@@ -271,10 +272,8 @@ public abstract class AbstractPage {
 	public boolean isPriceSortedDescending(WebDriver driver, String locator) {
 		// Khai báo 1Array List
 		ArrayList<Float> arrayList = new ArrayList<Float>();
-
 		// Tìm tất cả element matching VS điều kiện (Name/ Price/..)
 		List<WebElement> elementList = findElementsByXpath(driver,locator);
-
 		// Lấy text của từng element add vào Array List
 		for (WebElement element : elementList) {
 			arrayList.add(Float.parseFloat(element.getText().replace("$", "").trim()));

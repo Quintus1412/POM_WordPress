@@ -44,9 +44,9 @@ public class Login_08_Dynamic_Locator_Rest_Param extends AbstractTest {
 	public void beforeClass(String browserName) {
 		driverManager = BrowserDriverFactory.getDriverManager(browserName);
 		/// driver = 1234-56245-145-6524
-		driver = driverManager.getDriver();	
+		//driver = driverManager.getDriver();
 		// Open URL -> navigate to login page
-		loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
+		//loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
 	}
 
 	@Test

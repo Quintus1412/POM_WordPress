@@ -1,0 +1,1122 @@
+2020-08-07 11:50:21,785 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 11:50:35,024 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 11:50:35,054 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 11:50:35,592 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 11:50:35,796 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 11:50:36,728 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 11:50:36,915 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 11:50:44,104 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 11:50:46,367 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 11:50:46,425 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 11:50:48,544 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 11:50:48,589 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 11:50:48,646 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:09:46,377 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:09:46,377 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:09:46,377 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:10:04,076 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:10:04,088 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:10:04,720 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:10:04,926 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:10:06,855 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:10:07,516 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:10:15,902 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:10:18,484 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:10:19,578 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:10:21,783 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:10:22,088 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:10:22,216 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:10:22,822 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:10:22,825 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:10:23,805 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:10:24,202 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:10:25,017 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:10:25,367 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:10:28,936 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:10:31,451 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:10:31,499 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:10:33,815 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:10:33,884 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:10:33,937 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:17:11,952 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:17:11,952 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:17:11,952 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:17:25,830 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:17:25,842 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:17:26,352 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:17:26,498 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:17:27,266 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:17:27,368 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:17:34,048 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:17:36,211 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:17:36,297 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:17:37,422 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:17:37,424 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:17:37,641 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:17:37,938 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:17:38,382 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:17:38,443 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:17:38,491 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:17:38,634 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:17:38,928 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:17:41,184 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:17:43,475 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:17:43,556 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:17:45,874 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:17:45,957 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:17:45,999 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:21:45,668 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:21:45,668 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:21:45,668 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:22:01,246 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:22:01,257 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:22:01,762 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:22:01,919 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:22:03,208 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:22:03,293 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:22:12,061 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:22:12,063 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:22:12,275 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:22:12,601 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:22:13,045 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:22:13,692 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:22:13,986 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:22:15,188 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:22:15,261 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:22:16,368 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:22:17,362 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:22:17,394 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:22:17,442 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:22:18,713 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:22:18,798 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:22:21,078 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:22:21,111 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:22:21,145 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:31:10,011 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:31:10,011 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:31:10,011 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:31:26,975 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:31:26,985 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:31:27,558 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:31:27,771 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:31:28,801 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:31:29,019 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:31:38,411 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:31:40,739 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:31:40,814 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:31:41,728 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:31:41,731 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:31:42,062 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:31:42,509 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:31:42,987 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:31:43,080 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:31:43,223 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:31:43,367 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:31:43,775 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:31:45,898 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:31:48,693 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:31:48,735 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:31:51,137 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:31:51,198 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:31:51,244 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:32:59,030 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:32:59,030 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:32:59,030 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:32:59,032 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:32:59,031 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:32:59,031 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:32:59,066 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:32:59,072 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:32:59,080 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:32:59,201 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:32:59,210 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:32:59,216 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:32:59,223 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:32:59,227 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:32:59,231 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:34:27,691 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:34:27,691 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 12:34:45,425 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:34:45,450 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:34:46,263 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:34:46,488 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:34:47,890 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:34:48,040 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:34:55,295 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 12:34:55,298 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 12:34:55,631 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 12:34:56,015 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 12:34:56,738 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 12:34:57,587 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 12:34:58,643 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:35:00,309 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 12:35:00,928 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:35:00,971 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:35:02,650 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 12:35:02,707 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 12:35:03,172 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:35:03,211 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:35:03,269 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 12:35:05,032 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 12:35:05,123 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 12:35:05,174 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 13:01:22,000 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 13:01:22,000 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - Open page
+2020-08-07 13:01:40,678 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 13:01:40,701 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 13:01:41,279 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 13:01:41,481 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 13:01:42,395 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 13:01:42,580 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 13:01:51,433 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 13:01:52,360 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 1: Open Login Page
+2020-08-07 13:01:52,364 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 2: Input Email textbox
+2020-08-07 13:01:52,705 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 3: Click to Continue button
+2020-08-07 13:01:53,072 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 4: Input Password textbox
+2020-08-07 13:01:53,729 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 13:01:53,795 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 5: Click to Continue button
+2020-08-07 13:01:53,880 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 13:01:54,240 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Pre-condition - STEP 6: Verify header text displayed
+2020-08-07 13:01:56,073 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 1: Click to open Screen Option
+2020-08-07 13:01:56,115 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 13:01:56,182 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 13:01:56,254 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-07 13:01:58,487 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 2: Verify Screen Option displayed
+2020-08-07 13:01:58,536 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 3: Click to close Screen Option
+2020-08-07 13:02:00,889 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 4: Verify Activity checkbox is undisplayed
+2020-08-07 13:02:00,949 INFO  com.wordpress.login.Login_12_Log_Report_HTML - ActivityCheckBoxIsUndisplayed - STEP 5: Verify Posts menu is undisplayed
+2020-08-07 13:02:00,994 INFO  com.wordpress.login.Login_12_Log_Report_HTML - Post-Condition - Close Browser
+2020-08-09 16:59:56,797 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-09 17:00:08,229 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-09 17:00:08,234 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-09 17:00:08,547 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-09 17:00:08,687 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-09 17:00:09,973 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-09 17:00:10,076 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-09 17:00:17,258 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-09 17:00:17,259 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-09 17:00:18,465 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-09 20:54:56,716 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-09 20:55:08,133 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-09 20:59:16,023 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-09 20:59:27,483 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-09 21:06:27,403 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-09 21:06:40,472 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-09 21:07:39,623 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-09 21:07:52,138 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-09 21:26:11,593 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-09 21:26:22,985 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-09 21:30:35,208 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-09 21:30:45,926 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-09 21:31:31,609 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-09 21:31:42,591 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 10:41:56,425 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 10:42:07,112 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 10:42:47,264 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 10:42:58,789 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 10:50:59,926 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 10:51:16,385 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 10:53:32,580 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 10:53:44,929 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 10:59:53,686 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 11:00:06,465 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 11:03:52,597 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 11:04:05,993 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 11:12:40,585 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 11:12:54,254 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 11:23:41,209 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 11:23:52,998 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:11:49,784 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:12:01,987 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:12:53,543 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:13:05,352 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:22:21,701 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:22:33,112 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:23:58,800 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:24:11,266 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:32:41,279 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:32:54,647 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:33:34,477 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:33:46,282 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:35:52,619 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:36:04,496 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:43:53,510 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:44:05,917 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 12:45:56,712 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 12:46:08,609 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 14:46:45,644 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - Open browser
+2020-08-10 14:46:56,892 INFO  com.wordpress.login.Login_09_Upload_Multiple_File - Pre-condition - STEP 1: Open Login Page
+2020-08-10 16:52:00,095 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 16:52:13,110 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 16:52:13,122 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 16:52:13,693 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 16:52:13,885 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 16:52:14,738 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 16:52:14,911 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 16:52:56,454 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 16:52:56,455 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-10 16:52:58,196 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-10 16:56:01,701 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 16:56:13,837 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 16:56:13,847 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 16:56:14,216 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 16:56:14,354 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 16:56:15,115 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 16:56:15,232 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 16:56:59,222 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 16:56:59,222 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-10 16:57:00,520 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-10 17:05:34,090 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:05:45,863 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:05:45,873 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:05:46,262 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:05:46,423 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:05:47,230 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:05:47,382 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:06:30,108 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:06:30,108 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-10 17:06:31,260 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-10 17:12:39,034 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:12:51,581 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:12:51,589 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:12:52,070 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:12:52,240 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:12:53,008 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:12:53,134 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:13:18,228 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:13:29,983 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:13:29,994 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:13:30,431 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:13:30,589 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:13:31,395 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:13:31,513 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:14:17,297 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:14:17,297 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-10 17:14:18,464 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-10 17:25:15,418 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:25:27,658 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:25:27,667 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:25:28,075 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:25:28,249 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:25:29,025 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:25:29,155 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:25:45,569 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:25:45,569 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-10 17:25:46,749 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-10 17:26:55,042 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:27:06,674 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:27:06,684 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:27:07,105 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:27:07,264 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:27:08,036 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:27:08,170 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:27:23,558 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:27:23,559 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-10 17:27:25,238 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-10 17:33:58,268 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:34:09,505 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:34:09,515 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:34:09,854 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:34:10,000 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:34:10,746 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:34:10,861 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:34:27,324 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:36:09,622 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:36:23,598 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:36:23,610 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:36:24,155 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:36:24,366 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:36:25,276 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:36:25,479 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:36:44,540 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:42:29,299 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:42:40,901 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:42:40,910 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:42:41,294 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:42:41,533 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:42:42,334 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:42:42,443 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:42:57,847 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:55:23,114 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:55:35,417 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:55:35,428 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:55:35,837 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:55:35,996 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:55:36,802 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:55:36,925 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:56:11,628 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 17:57:36,990 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:58:05,783 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 17:58:16,730 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 17:58:16,739 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 17:58:17,065 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 17:58:17,205 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 17:58:17,953 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 17:58:18,068 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 17:59:10,457 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 18:04:42,845 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 18:04:54,095 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 18:04:54,104 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 18:04:54,434 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 18:04:54,573 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 18:04:55,321 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 18:04:55,428 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 18:05:20,081 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 18:07:10,052 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 18:07:22,340 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 18:07:22,350 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 18:07:22,731 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 18:07:22,870 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 18:07:23,651 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 18:07:23,785 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 18:07:57,605 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 19:37:40,197 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 19:37:55,259 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 19:37:55,270 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 19:37:55,804 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 19:37:55,981 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 19:37:57,536 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 19:37:57,712 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 19:38:32,902 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 19:39:26,043 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 19:39:39,945 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 19:39:39,955 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 19:39:40,549 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 19:39:40,925 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 19:39:41,895 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 19:39:42,086 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 19:40:17,000 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 19:44:29,409 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 19:44:43,040 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 19:44:43,048 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 19:44:43,576 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 19:44:43,749 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 19:44:44,634 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 19:44:44,879 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 19:45:23,909 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 19:57:06,279 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 19:57:17,915 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 19:57:17,924 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 19:57:18,248 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 19:57:18,387 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 19:57:19,121 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 19:57:19,234 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 19:57:26,896 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 20:00:21,651 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 20:00:33,423 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 20:00:33,432 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 20:00:33,759 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 20:00:33,898 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 20:00:34,694 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 20:00:34,818 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 20:01:13,047 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-10 20:18:30,736 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-10 20:18:45,288 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-10 20:18:45,299 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-10 20:18:45,822 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-10 20:18:46,002 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-10 20:18:46,865 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-10 20:18:47,031 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-10 20:19:27,027 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 10:28:23,038 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 10:28:39,561 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 10:28:39,572 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 10:28:41,264 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 10:28:41,414 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 10:28:42,287 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 10:28:42,475 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 10:29:51,992 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 12:05:03,735 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 12:05:17,032 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 12:05:17,043 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 12:05:17,493 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 12:05:17,682 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 12:05:18,657 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 12:05:18,837 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 12:06:26,242 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 12:29:57,314 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 12:30:13,238 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 12:30:13,248 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 12:30:14,211 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 12:30:14,700 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 12:30:15,518 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 12:30:15,766 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 12:31:00,727 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 14:56:40,541 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 14:56:55,425 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 14:56:55,435 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 14:56:56,130 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 14:56:56,318 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 14:56:57,289 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 14:56:57,505 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 14:57:41,703 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 16:21:06,899 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 16:21:20,693 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 16:21:20,705 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 16:21:21,451 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 16:21:21,693 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 16:21:22,715 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 16:21:22,963 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 16:22:30,177 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 16:23:33,598 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 16:23:46,177 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 16:23:46,188 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 16:23:46,746 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 16:23:46,973 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 16:23:48,006 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 16:23:48,192 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 16:24:56,819 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 16:34:38,239 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 16:34:50,254 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 16:34:50,263 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 16:34:50,596 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 16:34:50,734 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 16:34:51,483 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 16:34:51,602 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 16:35:58,278 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 16:36:21,562 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 16:36:32,875 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 16:36:32,885 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 16:36:33,206 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 16:36:33,340 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 16:36:34,111 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 16:36:34,217 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 16:37:11,711 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 16:47:54,233 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 16:48:06,368 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 16:48:06,379 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 16:48:06,764 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 16:48:06,898 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 16:48:08,203 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 16:48:08,295 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 16:48:45,804 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 16:51:31,273 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 16:51:43,046 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 16:51:43,054 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 16:51:43,437 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 16:51:43,576 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 16:51:44,361 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 16:51:44,469 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 16:52:52,999 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 16:57:44,149 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 16:57:56,954 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 16:57:56,967 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 16:57:57,259 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 16:57:57,395 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 16:57:58,140 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 16:57:58,246 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 16:58:37,731 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 17:03:04,197 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 17:03:15,858 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 17:03:15,868 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 17:03:16,376 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 17:03:16,511 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 17:03:17,255 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 17:03:17,379 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 17:03:56,743 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 19:03:39,085 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 19:03:51,086 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 19:03:51,097 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 19:03:51,434 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 19:03:51,572 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 19:03:52,321 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 19:03:52,465 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 19:04:31,897 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 19:04:33,228 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 19:04:33,847 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 19:04:35,479 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 20:12:02,287 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 20:12:15,176 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 20:12:15,183 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 20:12:15,699 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 20:12:15,914 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 20:12:16,855 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 20:12:17,066 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 20:12:56,903 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 20:12:58,772 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 20:12:59,707 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 20:13:08,643 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-11 20:13:39,707 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 20:22:43,244 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 20:22:54,327 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 20:22:54,335 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 20:22:54,663 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 20:22:54,797 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 20:22:55,583 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 20:22:55,701 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 20:23:31,699 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 20:23:33,510 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 20:23:34,194 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 20:23:41,391 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-11 20:24:18,140 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 20:29:19,305 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 20:29:31,468 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 20:29:31,479 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 20:29:31,903 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 20:29:32,060 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 20:29:33,386 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 20:29:33,503 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 20:30:07,097 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 20:30:08,500 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 20:30:09,430 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 20:30:17,067 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-11 20:30:25,673 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-11 20:30:26,375 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-11 20:30:26,971 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-11 20:30:28,952 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Verify after editing
+2020-08-11 20:30:29,234 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-11 20:30:30,378 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-11 20:30:31,318 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-11 20:30:31,943 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-11 20:30:33,455 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 20:34:26,190 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 20:34:39,706 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 20:34:39,718 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 20:34:40,246 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 20:34:40,434 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 20:34:41,326 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 20:34:41,580 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 20:35:21,991 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 20:35:24,057 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 20:35:25,163 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 20:35:34,758 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-11 20:35:43,332 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-11 20:35:43,900 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-11 20:35:45,970 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-11 20:35:47,639 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Verify after editing
+2020-08-11 20:35:48,010 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-11 20:35:49,463 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-11 20:35:51,253 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-11 20:35:52,127 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-11 20:35:54,444 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 20:56:17,185 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 20:56:32,143 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 20:56:32,154 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 20:56:32,745 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 20:56:32,927 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 20:56:34,475 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 20:56:34,617 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 20:57:17,329 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 20:57:19,202 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 20:57:20,451 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 20:57:29,927 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-11 20:57:37,549 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-11 20:57:38,844 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-11 20:57:40,446 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-11 20:57:42,522 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Verify after editing
+2020-08-11 20:58:13,410 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 21:04:38,152 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 21:04:51,720 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 21:04:51,729 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 21:04:52,048 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 21:04:52,188 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 21:04:52,952 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 21:04:53,053 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 21:05:28,459 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 21:05:29,969 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 21:05:30,823 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 21:05:39,014 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-11 21:05:45,401 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-11 21:05:46,222 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-11 21:05:47,401 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-11 21:05:50,079 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-11 21:05:50,349 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-11 21:05:51,634 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-11 21:05:52,658 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-11 21:06:08,550 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-11 21:06:10,794 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-11 21:35:16,253 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-11 21:35:31,610 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-11 21:35:31,620 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-11 21:35:32,233 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-11 21:35:32,476 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-11 21:35:33,454 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-11 21:35:33,634 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-11 21:36:21,103 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-11 21:36:23,549 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-11 21:36:25,122 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-11 21:36:36,203 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-11 21:36:45,147 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-11 21:36:46,969 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-11 21:36:49,036 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-11 21:36:51,265 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-11 21:36:51,877 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-11 21:36:53,567 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-11 21:36:55,004 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-11 21:37:11,045 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-11 21:37:13,344 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 10:46:28,463 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 10:46:41,054 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 10:46:41,064 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 10:46:41,573 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 10:46:41,704 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 10:46:43,000 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 10:46:43,106 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 10:47:19,367 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 10:47:21,091 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 10:47:21,627 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 10:47:29,295 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 10:47:36,372 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 10:47:37,184 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 10:47:38,689 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 10:47:40,224 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 10:47:40,538 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 10:47:41,622 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 10:47:42,707 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 10:47:58,382 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 10:48:00,305 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 10:58:26,320 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 10:58:38,708 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 10:58:38,720 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 10:58:39,064 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 10:58:39,253 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 10:58:40,009 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 10:58:40,114 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 10:59:14,549 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 10:59:16,264 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 10:59:16,975 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 10:59:24,760 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 10:59:32,052 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 10:59:32,456 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 10:59:34,119 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 10:59:35,736 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 10:59:36,018 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 10:59:37,136 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 10:59:38,180 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 10:59:53,954 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 10:59:57,976 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 10:59:59,530 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 10:59:59,840 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 11:00:02,139 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 11:00:06,847 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 11:00:08,665 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 11:00:28,703 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 11:26:08,906 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 11:26:19,928 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 11:26:19,938 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 11:26:20,346 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 11:26:20,494 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 11:26:21,253 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 11:26:21,380 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 11:26:55,092 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 11:26:56,427 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 11:26:57,624 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 11:27:05,447 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 11:27:13,541 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 11:27:14,492 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 11:27:15,623 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 11:27:17,152 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 11:27:17,548 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 11:27:18,737 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 11:27:19,759 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 11:27:35,462 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 11:27:39,718 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 11:27:41,319 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 11:27:41,594 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 11:27:43,433 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 11:27:47,754 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 11:27:49,296 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 11:28:09,450 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 11:28:09,575 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 11:28:30,803 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 11:47:57,068 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 11:48:08,310 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 11:48:08,320 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 11:48:08,660 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 11:48:08,807 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 11:48:09,544 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 11:48:09,661 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 11:48:45,808 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 11:48:47,764 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 11:48:48,846 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 11:48:56,321 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 11:49:02,502 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 11:49:03,475 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 11:49:04,618 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 11:49:06,223 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 11:49:06,528 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 11:49:07,636 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 11:49:08,670 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 11:49:24,356 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 11:49:28,681 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 11:49:30,419 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 11:49:30,695 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 11:49:32,560 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 11:49:37,510 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 11:49:39,200 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 11:49:59,284 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 11:49:59,357 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 11:50:30,612 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 11:51:49,025 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 11:52:02,220 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 11:52:02,232 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 11:52:02,617 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 11:52:02,756 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 11:52:04,062 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 11:52:04,173 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 11:52:38,613 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 11:52:40,041 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 11:52:41,189 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 11:52:48,704 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 11:52:56,502 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 11:52:57,784 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 11:52:59,321 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 11:53:00,853 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 11:53:01,222 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 11:53:02,301 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 11:53:03,550 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 11:53:19,341 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 11:53:23,221 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 11:53:24,762 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 11:53:25,018 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 11:53:26,801 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 11:53:31,882 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 11:53:33,506 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 11:53:53,639 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 11:53:53,737 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 11:54:05,073 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 11:54:06,436 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 11:54:16,661 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 12:02:20,281 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 12:02:32,387 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 12:02:32,397 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 12:02:32,752 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 12:02:32,907 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 12:02:33,671 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 12:02:33,800 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 12:03:11,781 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 12:03:13,364 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 12:03:14,471 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 12:03:23,295 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 12:03:31,559 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 12:03:32,443 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 12:03:33,925 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 12:03:35,582 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 12:03:35,904 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 12:03:36,973 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 12:03:38,209 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 12:03:54,087 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 12:03:58,958 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 12:04:00,553 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 12:04:00,896 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 12:04:03,123 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 12:04:08,567 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 12:04:10,100 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 12:04:30,264 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 12:04:30,346 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 12:04:41,603 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 12:04:42,922 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 12:04:53,061 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 12:12:20,353 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 12:12:34,700 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 12:12:34,710 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 12:12:35,198 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 12:12:35,365 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 12:12:36,157 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 12:12:36,297 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 12:13:11,245 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 12:13:12,519 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 12:13:14,248 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 12:13:22,003 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 12:13:29,632 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 12:13:30,679 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 12:13:31,882 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 12:13:33,641 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 12:13:33,976 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 12:13:35,274 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 12:13:36,282 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 12:13:52,001 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 12:13:54,061 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 12:16:35,391 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 12:17:10,885 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 12:17:10,896 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 12:17:11,267 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 12:17:12,022 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 12:17:12,724 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 12:17:13,033 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 12:17:21,463 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 12:19:03,791 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 12:19:16,125 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 12:19:16,135 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 12:19:16,632 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 12:19:16,777 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 12:19:17,554 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 12:19:17,751 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 12:19:55,226 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 12:19:56,639 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 12:19:57,873 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 12:20:05,504 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 12:20:13,124 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 12:20:13,966 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 12:20:15,290 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 12:20:16,844 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 12:20:17,182 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 12:20:18,865 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 12:20:20,235 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 12:20:35,978 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 12:20:37,726 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 12:21:41,115 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 12:21:53,808 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 12:21:53,820 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 12:21:54,284 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 12:21:54,453 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 12:21:55,275 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 12:21:55,428 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 12:22:33,099 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 12:22:34,438 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 12:22:35,217 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 12:22:43,563 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 12:22:51,416 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 12:22:52,768 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 12:22:54,188 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 12:22:56,283 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 12:22:56,667 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 12:22:58,091 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 12:22:59,885 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 12:23:15,921 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 12:28:26,332 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 12:28:32,216 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 12:28:32,574 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 12:28:35,071 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 12:28:39,631 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 12:28:42,450 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 12:29:02,583 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 12:29:02,678 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 12:29:14,039 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 12:29:16,150 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 12:29:16,529 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 12:29:26,603 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 12:29:29,363 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 12:29:29,377 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 12:29:29,843 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 12:29:29,992 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 12:29:30,769 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 12:29:30,906 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 12:30:06,414 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 12:30:08,195 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 12:30:08,976 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 12:30:17,064 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 12:30:23,548 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 12:30:24,564 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 12:30:25,813 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 12:30:27,548 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 12:30:27,893 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 12:30:29,139 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 12:30:30,308 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 12:30:46,143 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 12:30:51,488 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 12:30:53,093 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 12:30:53,422 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 12:30:55,655 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 12:30:59,895 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 12:31:01,638 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 12:31:21,769 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 12:31:21,865 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 12:31:33,080 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 12:31:34,543 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 12:31:44,633 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 12:57:13,156 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 12:57:28,243 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 12:57:28,264 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 12:57:29,148 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 12:57:29,417 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 12:57:30,264 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 12:57:30,441 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 12:58:12,282 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 12:58:17,617 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 12:58:18,379 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 12:58:30,516 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 12:58:37,117 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 12:58:37,776 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 12:58:38,466 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 12:58:41,049 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 12:58:41,562 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 12:58:43,447 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 12:58:45,264 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 12:59:01,298 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 12:59:09,392 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 12:59:11,117 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 12:59:11,476 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 12:59:13,783 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 12:59:20,579 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 12:59:23,891 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 12:59:44,118 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 12:59:44,211 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 12:59:55,712 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 12:59:57,501 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 13:00:07,577 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 13:01:32,259 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 13:01:46,165 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 13:01:46,178 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 13:01:46,563 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 13:01:46,726 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 13:01:47,492 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 13:01:47,633 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 13:02:30,688 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 13:02:32,284 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 13:02:33,109 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 13:02:42,547 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 13:02:50,314 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 13:02:51,696 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 13:02:53,875 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 13:02:55,691 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 13:02:56,049 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 13:02:58,038 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 13:02:59,201 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 13:03:15,332 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 13:03:19,750 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 13:03:21,360 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 13:03:21,667 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 13:03:23,513 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 13:03:28,490 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 13:03:30,123 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 13:03:50,337 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 13:03:50,469 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 13:04:01,919 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 13:04:03,250 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 13:04:13,294 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 13:10:04,557 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 13:10:16,760 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 13:10:16,772 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 13:10:17,137 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 13:10:17,287 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 13:10:18,128 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 13:10:18,259 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 13:10:52,948 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 13:10:54,370 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 13:10:55,367 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 13:11:02,715 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 13:11:10,095 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 13:11:10,986 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 13:11:12,365 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 13:11:13,849 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 13:11:14,205 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 13:11:15,183 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 13:11:16,486 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 13:11:32,331 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 13:11:36,743 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 13:11:38,310 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 13:11:38,698 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 13:11:40,642 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 13:11:45,084 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 13:11:46,520 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 13:12:06,676 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 13:12:06,768 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 13:12:17,827 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 13:12:19,198 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 13:12:29,311 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 13:19:15,606 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 13:19:27,410 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 13:19:27,419 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 13:19:27,730 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 13:19:27,892 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 13:19:28,651 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 13:19:28,761 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 13:20:05,950 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 13:20:07,341 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 13:20:08,489 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 13:20:17,115 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 13:20:24,887 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 13:20:25,919 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 13:20:27,201 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 13:20:28,746 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 13:20:29,174 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 13:20:30,798 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 13:20:32,135 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 13:20:47,925 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 13:20:49,716 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-12 13:21:39,187 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-12 13:21:50,624 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-12 13:21:50,636 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-12 13:21:50,951 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-12 13:21:51,098 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-12 13:21:51,902 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-12 13:21:52,016 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-12 13:22:26,947 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-12 13:22:28,525 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-12 13:22:29,683 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-12 13:22:37,240 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Edit post in Admin
+2020-08-12 13:22:43,274 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Post updated
+2020-08-12 13:22:44,376 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: open POst PAGE
+2020-08-12 13:22:45,598 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post after editing
+2020-08-12 13:22:47,158 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Verify after editing
+2020-08-12 13:22:47,458 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Open end userpage and Search post after editing on end user page
+2020-08-12 13:22:48,647 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Go to Post detail on end user page
+2020-08-12 13:22:49,630 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Check the post info is correct
+2020-08-12 13:23:05,382 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC2: Search post title after updated is existed in end user
+2020-08-12 13:23:09,381 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-12 13:23:11,026 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-12 13:23:11,290 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Go to Post detail
+2020-08-12 13:23:13,227 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Delete post and bach to the Post page
+2020-08-12 13:23:17,547 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted post
+2020-08-12 13:23:19,111 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: deleted post is undisplayed
+2020-08-12 13:23:39,336 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: return 'No result text:'
+2020-08-12 13:23:39,418 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify the deleted post is undisplayed on end User Home page
+2020-08-12 13:23:50,754 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search the deleted on end user HomePage 
+2020-08-12 13:23:51,990 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: No search result returned
+2020-08-12 13:24:02,064 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-13 20:03:49,137 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-13 20:04:06,204 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-13 20:04:06,215 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-13 20:04:06,639 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-13 20:04:06,803 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-13 20:04:08,191 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-13 20:04:08,422 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-13 20:04:59,610 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-13 20:05:02,037 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-13 20:05:02,774 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-13 20:05:08,443 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Search post to delete
+2020-08-13 20:05:10,421 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - TC3: Verify after searching
+2020-08-13 20:05:41,037 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-15 10:39:36,708 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-15 10:39:50,805 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-15 10:39:50,816 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-15 10:39:51,814 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-15 10:39:51,958 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-15 10:39:53,234 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-15 10:39:53,340 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-15 10:40:35,986 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-15 10:40:37,933 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-15 10:40:38,574 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-15 10:40:40,495 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-15 10:40:40,496 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-15 10:40:41,941 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-15 10:44:41,584 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-15 10:44:54,435 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-15 10:44:54,689 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-15 10:44:55,111 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-15 10:44:55,379 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-15 10:44:56,194 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-15 10:44:56,352 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-15 10:45:34,743 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-15 10:45:36,326 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-15 10:45:37,183 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-15 10:45:38,880 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-15 10:45:38,880 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-15 10:45:40,422 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-15 10:49:03,017 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-15 10:49:14,912 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-15 10:49:14,923 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-15 10:49:15,241 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-15 10:49:15,384 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-15 10:49:16,159 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-15 10:49:16,275 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-15 10:49:49,733 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-15 10:49:50,939 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-15 10:49:51,859 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-15 10:49:53,864 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-15 10:49:53,864 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-15 10:49:55,098 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------
+2020-08-15 12:28:05,001 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-15 12:28:18,701 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-15 12:28:19,373 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-15 12:28:19,917 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-15 12:28:20,065 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-15 12:28:20,831 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-15 12:28:20,942 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-15 12:29:00,547 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-15 12:29:03,325 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-15 12:29:04,437 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-15 12:29:07,026 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-15 12:29:07,026 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-15 12:29:09,036 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------

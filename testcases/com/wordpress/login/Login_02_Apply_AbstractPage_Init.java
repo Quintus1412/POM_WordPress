@@ -32,7 +32,7 @@ public class Login_02_Apply_AbstractPage_Init {
 	public void beforeClass() {
 		// System.setProperty("webdriver.gecko.driver", ".\\drivers\\geckodriver.exe");
 		// driver = new FirefoxDriver();
-		abstPage = new AbstractPage() ;
+		//abstPage = new AbstractPage() ;
 		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

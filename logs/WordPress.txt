@@ -1,0 +1,13 @@
+2020-08-15 12:28:05,001 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - Open browser
+2020-08-15 12:28:18,701 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 1: Open Login Page
+2020-08-15 12:28:19,373 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 2: Input Email textbox
+2020-08-15 12:28:19,917 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 3: Click to Continue button
+2020-08-15 12:28:20,065 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 4: Input Password textbox
+2020-08-15 12:28:20,831 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 5: Click to Continue button
+2020-08-15 12:28:20,942 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Pre-condition - STEP 6: Verify header text displayed
+2020-08-15 12:29:00,547 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Go to Post detail
+2020-08-15 12:29:03,325 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Check the post info is correct
+2020-08-15 12:29:04,437 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Search post title is existed in end user
+2020-08-15 12:29:07,026 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - Post-condition - Close browser
+2020-08-15 12:29:07,026 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - OS name = windows 10
+2020-08-15 12:29:09,036 INFO  com.wordpress.posts.Admin_01_Create_View_Edit_Delete - ---------- QUIT BROWSER SUCCESS ----------

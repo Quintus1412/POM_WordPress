@@ -34,9 +34,9 @@ public class Login_06_Browser_Factory_Pattern extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driverManager = BrowserDriverFactory.getDriverManager(browserName);
-		driver = driverManager.getDriver();
+		//driver = driverManager.getDriver();
 		
-		loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
+		//loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
 		loginPageUrl = loginPage.getLoginPageUrl();
 	}
 

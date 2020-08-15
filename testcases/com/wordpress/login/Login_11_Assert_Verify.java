@@ -43,7 +43,7 @@ public class Login_11_Assert_Verify extends AbstractTest {
 	public void beforeClass(String browserName) {
 		driverManager = BrowserDriverFactory.getDriverManager(browserName);
 		/// driver = 1234-56245-145-6524
-		driver = driverManager.getDriver("https://automationfc.wordpress.com/wp-admin/");
+		//driver = driverManager.getDriver("https://automationfc.wordpress.com/wp-admin/");
 		// Open URL -> navigate to login page
 		loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
 	}

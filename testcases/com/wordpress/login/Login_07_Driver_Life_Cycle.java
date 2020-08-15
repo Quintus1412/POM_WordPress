@@ -46,7 +46,7 @@ public class Login_07_Driver_Life_Cycle extends AbstractTest {
 		
 		//driverManager = BrowserDriverFactory.getDriverManager(browserName);
 		
-		loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
+		//loginPage = PageGeneratorManager_WordPress.getLoginPage(driver);
 	}
 
 	@Test

@@ -52,5 +52,6 @@
 	<classpathentry kind="lib" path="libJackson/jackson-annotations-2.10.0.jar"/>
 	<classpathentry kind="lib" path="libJackson/jackson-core-2.10.0.jar"/>
 	<classpathentry kind="lib" path="libJackson/jackson-databind-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libraries/testng-6.9.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

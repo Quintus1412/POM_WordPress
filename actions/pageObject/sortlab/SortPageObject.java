@@ -13,6 +13,7 @@ public class SortPageObject extends AbstractPage {
 	}
 	public void selectItemInSortDropDown( String value) {
 		waitForElementClickable(driver, SortPageUI.SORT_DRODOWN);
+		highlightElement(driver, SortPageUI.SORT_DRODOWN);
 		selectValueInDropdown(driver, SortPageUI.SORT_DRODOWN, value);
 		
 	}

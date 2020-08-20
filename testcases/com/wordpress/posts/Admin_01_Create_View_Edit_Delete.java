@@ -121,6 +121,7 @@ public class Admin_01_Create_View_Edit_Delete extends AbstractTest {
 		verifyTrue(searchResultUserPage.isPostTitleDisplayedOnHeader(newPostTitle));
 		verifyTrue(searchResultUserPage.isPostDisplayedOnLastedPost(driver, newPostCategory, newPostTitle, getWordPressToday()));
 		verifyTrue(searchResultUserPage.isPostImageDisplayedAtPostTitleName(driver, newPostTitle, featureImage));
+		
 
 		//
 	}

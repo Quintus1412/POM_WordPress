@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="word Press" parallel="tests" thread-count="3">
+<suite name="NopCommerce" parallel="tests" thread-count="3">
 <listeners>
 <listener class-name="commons.MethodListener"/>
-
 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<!-- <listener class-name="retryTest.RetryListener"/> -->
+<listener class-name="reportConfig.ReportNGListener"/>
 <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 <listener class-name="reportConfig.ExtentListener"/>
 </listeners>
@@ -11,7 +12,7 @@
 
 
   <test name="Run on Chrome">
-  <parameter name = "browser" value = "chrome"/>
+  <parameter name = "browser" value = "firefox"/>
   <parameter name = "url" value = "https://demo.nopcommerce.com/"/>
     <classes>
       <class name="com.nopecommerce.endUser.Register_01_Data_In_Class"/>

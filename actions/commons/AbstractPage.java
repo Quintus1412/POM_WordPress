@@ -582,7 +582,7 @@ public abstract class AbstractPage {
 		jsExecutor = (JavascriptExecutor) driver;
 		element = findElementByXpath(driver, locator);
 		String originalStyle = element.getAttribute("style");
-		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 5px solid red; border-style: dashed;");
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 3px solid red; border-style: dashed;");
 		sleepInSecond(1);
 		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", originalStyle);
 

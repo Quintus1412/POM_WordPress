@@ -21,6 +21,7 @@ import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,7 +30,31 @@ public abstract class AbstractTest {
 	//chỉ cho class ke thua AbstractTest su dung
 	protected final Log log;
 
-	//khoi taolog ra dua tien cho 
+	@BeforeSuite
+	private void deleteAllFilesInReportNGScreenshot() {
+		System.out.println("---------- START delete file in folder ---------- ");
+		deleteAllFileInFolder();
+		System.out.println("---------- END delete file in folder ----------");
+	}
+
+	private void deleteAllFileInFolder() {
+		try {
+			String workingDir = System.getProperty("user.dir");
+			String pathFolderDownload = workingDir + "\\ReportNGScreenshots";
+			File file = new File(pathFolderDownload);
+			File[] listOfFiles = file.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				if (listOfFiles[i].isFile()) {
+					System.out.println(listOfFiles[i].getName());
+					new File(listOfFiles[i].toString()).delete();
+				}
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
+	}
+
+		
 	protected AbstractTest () {
 		log = LogFactory.getLog(getClass());
 	}
@@ -286,6 +311,9 @@ public abstract class AbstractTest {
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
 		Date date = new Date();
 		return format.format(date).replace(":", "-").replace(" ", "-");
+	}
+public WebDriver getDriver() {
+		return driver;
 	}
 
 }

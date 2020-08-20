@@ -49,6 +49,8 @@ public class Register_01_Data_In_Class extends AbstractTest {
 		driver.findElement(By.id("LastName")).sendKeys(lastname);
 		driver.findElement(By.id("Email")).sendKeys(email);
 		driver.findElement(By.id("Company")).sendKeys(companyName);
+		
+		verifyTrue(false);
 
 		driver.findElement(By.id("Password")).sendKeys(password);
 		driver.findElement(By.id("ConfirmPassword")).sendKeys(password);
@@ -57,17 +59,18 @@ public class Register_01_Data_In_Class extends AbstractTest {
 	}
 
 	@Test
-	public void Verify_My_Account() {
+	public void TC_02_Verify_My_Account() {
 		driver.findElement(By.xpath("//a[@class='ico-account']")).click();
 		verifyEquals(driver.findElement(By.id("FirstName")).getAttribute("value"),firstname);
 		verifyEquals(driver.findElement(By.id("LastName")).getAttribute("value"),lastname);
 		verifyEquals(driver.findElement(By.id("Email")).getAttribute("value"),email);
 		verifyEquals(driver.findElement(By.id("Company")).getAttribute("value"),companyName);
+		
 	}
 
 	@AfterClass
 	public void afterClass() {
-
+closeBrowserAndDriver(driver);
 	}
 
 }
